@@ -1,0 +1,42 @@
+#saleorder
+{
+	width:70%;	
+}
+#listorder
+{
+	width:30%;
+}
+#product-content
+{
+	
+}
+#frmSaleOrder
+{
+	
+}
+#frmSaleOrder input
+{
+	width:98%;	
+}
+#frmSaleOrder textarea
+{
+	width:98%;	
+}
+.ordercurrent
+{
+	background:red !important;
+	font-weight:bold
+}
+.new
+{
+	background:#FF0;
+}
+.delivered
+{
+	
+}
+#listorder
+{
+	overflow:auto;
+	
+}
