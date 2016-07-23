@@ -32,7 +32,7 @@ class ControllerPageHome extends Controller
 			//Banner home
 			$template = array(
 						  'template' => "home/banner.tpl",
-						  'width' => 765,
+						  'width' => 280,
 						  'height' =>0
 						  );
 		
@@ -157,11 +157,12 @@ class ControllerPageHome extends Controller
 	private function loadSiteBar()
 	{
 		//Left sitebar
-		$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
+		$this->data['leftsitebar']['brand'] = $this->loadModule('sitebar/brand');
+		/*$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['cart'] = $this->loadModule('sitebar/cart');
-		$this->data['leftsitebar']['gallery'] = $this->loadModule('sitebar/gallery');
+		$this->data['leftsitebar']['gallery'] = $this->loadModule('sitebar/gallery');*/
 		//$this->data['leftsitebar']['faq'] = $this->loadModule('sitebar/faq');
 		
 		//$this->data['leftsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
@@ -170,6 +171,7 @@ class ControllerPageHome extends Controller
 		//$this->data['leftsitebar']['hitcounter'] = $this->loadModule('sitebar/hitcounter');
 		
 		//Rigth sitebar
+		$this->data['rightsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
 		/*$this->data['rightsitebar']['login'] = $this->loadModule('sitebar/login');
 		$this->data['rightsitebar']['search'] = $this->loadModule('sitebar/search');
 		$this->data['rightsitebar']['cart'] = $this->loadModule('sitebar/cart');

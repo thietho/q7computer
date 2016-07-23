@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 21, 2016 at 06:42 PM
+-- Generation Time: Jul 23, 2016 at 03:39 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -3525,7 +3525,7 @@ CREATE TABLE IF NOT EXISTS `sitemap` (
   `status` varchar(30) NOT NULL,
   `forward` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=134 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=140 ;
 
 --
 -- Dumping data for table `sitemap`
@@ -3535,66 +3535,19 @@ INSERT INTO `sitemap` (`id`, `sitemapid`, `siteid`, `sitemapparent`, `sitemapnam
 (1, 'trangchu', 'default', '', 'Trang chủ', '', 1, 'homepage', 0, '', 'Active', ''),
 (2, 'gioithieu', 'default', '', 'Giới thiệu', '', 2, 'module/information', 0, '', 'Active', ''),
 (4, 'sanpham', 'default', '', 'Sản phẩm', '', 4, 'module/product', 0, '', 'Active', ''),
-(5, 'tuyendung', 'default', '', 'Tuyển dụng', '', 5, 'module/news', 0, '', 'Addon', ''),
-(6, 'lienhe', 'default', '', 'Liên hệ', '', 7, 'module/contact', 0, '', 'Addon', ''),
-(121, 'tin-tuc', 'default', 'thong-tin', 'Tin tức', '', 18, 'module/news', 0, '', 'Active', ''),
-(10, 'banner', 'default', '', 'Banner', '', 8, 'module/banner', 0, '', 'Addon', ''),
-(11, 'lienket', 'default', '', 'Liên kết website', '', 9, 'module/link', 0, '', 'Addon', ''),
+(6, 'lienhe', 'default', '', 'Liên hệ', '', 7, 'module/contact', 0, '', 'Active', ''),
+(10, 'banner', 'default', '', 'Banner hearder', '', 8, 'module/link', 0, '', 'Addon', ''),
 (12, 'hotroonline', 'default', '', 'Hổ trợ online', '', 10, 'module/information', 0, '', 'Addon', ''),
-(13, 'thamdoykien', 'default', '', 'Thăm dò ý kiến', '', 11, 'module/question', 0, '', 'Addon', ''),
-(14, 'sododuongdi', 'default', '', 'Sơ đồ đường đi', '', 12, 'module/location', 0, '', 'Addon', ''),
+(14, 'sododuongdi', 'default', '', 'Sơ đồ', '', 5, 'module/location', 0, '', 'Active', ''),
 (15, 'bannerhome', 'default', '', 'Banner home page', '', 13, 'module/banner', 0, '', 'Addon', ''),
 (49, 'faq', 'default', '', 'Hỏi đáp nhanh', '', 14, 'module/information', 0, '', 'Addon', ''),
-(21, 'nuochoa', 'default', 'sanpham', 'Nước hoa', '', 7, 'module/product', 0, '', 'Active', ''),
-(107, 'suataytrang', 'default', 'trangdiem', 'Tẩy trang', '', 10, 'module/product', 0, '', 'Active', ''),
-(24, 'trangdiem', 'default', 'sanpham', 'Trang điểm', '', 6, 'module/product', 0, '', 'Active', ''),
-(82, 'fashion', 'default', '', 'Thời trang', '', 7, 'module/product', 0, '', 'Active', ''),
-(26, 'nuochoanam', 'default', 'nuochoa', 'Nước hoa nam', '', 2, 'module/product', 0, '', 'Active', ''),
-(27, 'nuochoanu', 'default', 'nuochoa', 'Nước hoa nữ', '', 1, 'module/product', 0, '', 'Active', ''),
-(29, 'lankhumui', 'default', 'nuochoa', 'Lăn khử mùi', '', 4, 'module/product', 0, '', 'Active', ''),
-(120, 'dau-goi-sua-tam-duong-the', 'default', 'duongdatoanthan', 'Dầu gội - sữa tắm - dưỡng thể', '', 6, 'module/product', 0, '', 'Active', ''),
-(71, 'duongdatoanthan', 'default', 'sanpham', 'Dưỡng da toàn thân', '', 4, 'module/product', 0, '', 'Active', ''),
-(116, 'nhom-moi', 'default', '', 'Nhóm mới', '', 16, 'module/product', 0, '', 'Active', ''),
-(37, 'phannen', 'default', 'trangdiem', 'Kem nền', '', 2, 'module/product', 0, '', 'Active', ''),
-(38, 'phanbot', 'default', 'trangdiem', 'Phấn nền - Phấn phủ', '', 3, 'module/product', 0, '', 'Active', ''),
-(39, 'kemlot', 'default', 'trangdiem', 'Kem lót', '', 1, 'module/product', 0, '', 'Active', ''),
-(40, 'sonmoi', 'default', 'trangdiem', 'Son môi', '', 5, 'module/product', 0, '', 'Active', ''),
-(74, 'suaruamatduongda', 'default', 'duongdamat', 'Sữa rửa mặt', '', 1, 'module/product', 0, '', 'Active', ''),
-(73, 'trangsuc', 'default', '', 'Trang sức', '', 5, 'module/product', 0, '', 'Addon', ''),
-(124, 'my-pham-danh-cho-nam', 'default', 'sanpham', 'Mỹ phẩm cho Nam', '', 9, 'module/product', 0, '', 'Active', ''),
-(123, 'dung-cu-trang-diem', 'default', 'trangdiem', 'Dụng cụ trang điểm', '', 11, 'module/product', 0, '', 'Active', ''),
-(122, 'khuyen-mai', 'default', 'thong-tin', 'Khuyến mãi', '', 19, 'module/news', 0, '', 'Active', ''),
-(59, 'mahong', 'default', 'trangdiem', 'Má hồng', '', 4, 'module/product', 0, '', 'Active', ''),
-(60, 'maumat', 'default', 'trangdiem', 'Màu mắt', '', 12, 'module/product', 0, '', 'Active', ''),
-(61, 'masscara', 'default', 'trangdiem', 'Masscara', '', 7, 'module/product', 0, '', 'Active', ''),
-(62, 'chikemat', 'default', 'trangdiem', 'Chì kẻ mắt &amp; Chân mày', '', 8, 'module/product', 0, '', 'Active', ''),
-(89, 'phukien', 'default', 'fashion', 'Phụ kiện', '', 7, 'module/product', 0, '', 'Active', ''),
-(78, 'setmakeup', 'default', 'trangdiem', 'Bộ trang điểm', '', 9, 'module/product', 0, '', 'Active', ''),
-(112, 'duongdavungmat', 'default', 'duongdamat', 'Dưỡng da vùng mắt', '', 8, 'module/product', 0, '', 'Active', ''),
-(127, 'kem-massage', 'default', 'duongdamat', 'Kem massage', '', 13, 'module/product', 0, '', 'Active', ''),
-(126, 'my-pham-theo-set', 'default', 'sanpham', 'Mỹ phẩm theo set', '', 10, 'module/product', 0, '', 'Active', ''),
-(87, 'tuixach', 'default', 'sanpham', 'Túi Guess', '', 8, 'module/product', 0, '', 'Hide', ''),
-(125, 'cach-thuc-mua-hang', 'default', '', 'Cách thức mua hàng', '', 20, 'module/information', 0, '', 'Addon', ''),
-(90, 'duongdamat', 'default', 'sanpham', 'Dưỡng da mặt', '', 3, 'module/product', 0, '', 'Active', ''),
-(91, 'nuochoahong', 'default', 'duongdamat', 'Nước hoa hồng', '', 2, 'module/product', 0, '', 'Active', ''),
-(92, 'tinhchat', 'default', 'duongdamat', 'Tinh chất (Serum)', '', 3, 'module/product', 0, '', 'Active', ''),
-(119, 'dieu-khoan-dang-ky', 'default', '', 'Điều khoan đăng ký', '', 17, 'module/information', 0, '', 'Active', ''),
-(118, 'kem-tam-mo-bung', 'default', 'duongdatoanthan', 'Kem tan mỡ bụng', '', 1, 'module/product', 0, '', 'Active', ''),
-(117, 'mat-na-thai-doc-to', 'default', 'duongdamat', 'Mặt nạ các loại', '', 11, 'module/product', 0, '', 'Active', ''),
-(115, 'san-pham-moi', 'default', '', 'Sản phẩm mới', '', 15, 'module/product', 0, '', 'Addon', ''),
-(99, 'chongnangbaove', 'default', 'duongdamat', 'Chống nắng bảo vệ hoàn hảo', '', 7, 'module/product', 0, '', 'Active', ''),
-(100, 'duongmoitritham', 'default', 'duongdamat', 'Dưỡng môi và trị thâm', '', 9, 'module/product', 0, '', 'Active', ''),
-(101, 'taytebaochet', 'default', 'duongdamat', 'Tẩy tế bào chết trắng mịn da', '', 10, 'module/product', 0, '', 'Active', ''),
-(102, 'tinhdaumassage', 'default', 'duongdamat', 'Tinh dầu massage phục hồi da', '', 12, 'module/product', 0, '', 'Active', ''),
-(105, 'taytebaochetbody', 'default', 'duongdatoanthan', 'Tẩy tế bào chết body', '', 4, 'module/product', 0, '', 'Active', ''),
-(106, 'chongnangbody', 'default', 'duongdatoanthan', 'Chống nắng body', '', 5, 'module/product', 0, '', 'Active', ''),
-(114, 'kemduongda', 'default', 'duongdamat', 'Kem dưỡng da', '', 4, 'module/product', 0, '', 'Active', ''),
-(128, 'cham-soc-dac-biet', 'default', 'duongdamat', 'Chăm sóc đặc biệt', '', 5, 'module/product', 0, '', 'Active', ''),
-(129, 'collagen', 'default', 'sanpham', 'Collagen', '', 5, 'module/product', 0, '', 'Active', ''),
-(130, 'hang-ban-si', 'default', '', 'Hàng bán sỉ', '', 21, 'module/information', 0, '', 'Active', ''),
-(131, 'mau-mat', 'default', 'hang-ban-si', 'Màu mắt', '', 1, 'module/information', 0, '', 'Active', ''),
-(132, 'ma-hong', 'default', 'hang-ban-si', 'Ma hồng', '', 2, 'module/information', 0, '', 'Active', ''),
-(133, 'thong-tin', 'default', '', 'Thông tin', '', 22, 'group', 0, '', 'Active', '');
+(136, 'main-board', 'default', 'sanpham', 'Main board', '', 1, 'module/product', 0, '', 'Active', ''),
+(137, 'cpu', 'default', 'sanpham', 'Cpu', '', 2, 'module/product', 0, '', 'Active', ''),
+(138, 'ram', 'default', 'sanpham', 'Ram', '', 3, 'module/product', 0, '', 'Active', ''),
+(139, 'card-man-hinh', 'default', 'sanpham', 'Card màn hình', '', 4, 'module/product', 0, '', 'Active', ''),
+(119, 'dieu-khoan-dang-ky', 'default', '', 'Điều khoan đăng ký', '', 17, 'module/information', 0, '', 'Addon', ''),
+(135, 'tin-tuc', 'default', '', 'Tin tức', '', 3, 'module/news', 0, '', 'Active', ''),
+(134, 'dich-vu', 'default', 'gioithieu', 'Dịch vụ', '', 1, 'module/information', 0, '', 'Active', '');
 
 -- --------------------------------------------------------
 

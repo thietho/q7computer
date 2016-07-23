@@ -1,22 +1,14 @@
 <div class="fix960">
-          <div class="site_content_left">
-                        <div class="head_title"><span>Sản Phẩm</span></div>
-            <div class="boxstyle">
-                  <div id="right-menu-right">
-                    <ul id="right-menu-panel">
-                      <li><a href='http://demo154com935.web30s.vn/products-35669/Dell/' OnClick="ShowMenuSP('menu_',5,1);  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Dell</a></li><li><a href='http://demo154com935.web30s.vn/products-35670/Acer/' OnClick="ShowMenuSP('menu_',5,2);  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Acer</a></li><li><a href='http://demo154com935.web30s.vn/products-35671/Asus/' OnClick="ShowMenuSP('menu_',5,3);  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Asus</a></li><li><a href='http://demo154com935.web30s.vn/products-35672/HP-compaq/' OnClick="ShowMenuSP('menu_',5,4);  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> HP-compaq</a></li><li><a href='http://demo154com935.web30s.vn/products-35673/Lenovo/' OnClick="ShowMenuSP('menu_',5,5);  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Lenovo</a></li><li><a href='http://demo154com935.web30s.vn/products-all/tat-ca-san-pham/' class='menuicon'><img src='<?php echo HTTP_SERVER.DIR_IMAGE?>cursor.png' class='img_icon'/>Tất cả sản phẩm</a></li>                    </ul>
-                    <div id="div-line-xanh"></div>
-                  </div>            </div>
-            <div class="clear" style="height:10px;"></div>
-                                                <div class="head_title"><span>TIN TỨC</span></div>
-            <div class="boxstyle">
-                  <div id="right-menu-right">
-                    <ul id="right-menu-panel">
-                      <li><a href='http://demo154com935.web30s.vn/catalog-58141/tin-cong-ty/' OnClick="ShowHidden('menutin_1');  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Tin công ty</a></li><li><a href='http://demo154com935.web30s.vn/catalog-58142/tin-khuyen-mai/' OnClick="ShowHidden('menutin_2');  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Tin khuyến mãi</a></li><li><a href='http://demo154com935.web30s.vn/catalog-58143/tin-nuoc-ngoai/' OnClick="ShowHidden('menutin_3');  return true;" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> Tin nước ngoài</a></li><li><a href='http://demo154com935.web30s.vn/catalog-all/tat-ca-san-pham/' class='menuicon'><img src='<?php echo HTTP_SERVER.DIR_IMAGE?>page.png' class='img_icon'/>Tất cả tin tức</a></li>                    </ul>
-                    <div id="div-line-xanh"></div>
-                  </div>            </div>
-            <div class="clear" style="height:10px;"></div>
-                                    <div class="head_title"><span>SẢN PHẨM HOT</span></div>
+	<div class="site_content_left">
+    	<?php if(@count($leftsitebar)){ ?>
+        	<?php foreach($leftsitebar as $item){ ?>
+        	<?php echo @$item?>
+           	<?php } ?>
+        <?php } ?>
+        
+            
+            
+      	<div class="head_title"><span>SẢN PHẨM HOT</span></div>
             <div class="boxstyle">
 				  
 								<div style='border-bottom:1px dotted #CCCCCC; margin:10px;' align='center'>
@@ -76,13 +68,9 @@
             	<table width='100%' border='1' style='border-collapse:collapse;'><td style="font-weight: bold;text-align: left;width:45%;"></td><td style="padding-right: 12px;"><strong>MUA</strong></td><td style="padding-right: 12px;" ><strong>BÁN</strong></td><tr><td style="font-weight: bold;text-align: left;width:45%;">USD</td><td style="padding-right: 12px;">22265</td><td style="padding-right: 12px;" >22335</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">THB</td><td style="padding-right: 12px;">624.51</td><td style="padding-right: 12px;" >650.58</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">SGD</td><td style="padding-right: 12px;">16284.42</td><td style="padding-right: 12px;" >16545.76</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">SEK</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >2630.63</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">SAR</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >6166.33</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">RUB</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >389.09</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">NOK</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >2667.31</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">MYR</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >5552.73</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">KWD</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >76444.14</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">KRW</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >20.26</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">JPY</td><td style="padding-right: 12px;">207.63</td><td style="padding-right: 12px;" >211.6</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">INR</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >344.38</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">HKD</td><td style="padding-right: 12px;">2837.74</td><td style="padding-right: 12px;" >2894.83</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">GBP</td><td style="padding-right: 12px;">29075.63</td><td style="padding-right: 12px;" >29542.26</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">EUR</td><td style="padding-right: 12px;">24430.61</td><td style="padding-right: 12px;" >24723.1</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">DKK</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >3361.4</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">CHF</td><td style="padding-right: 12px;">22346.1</td><td style="padding-right: 12px;" >22750.19</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">CAD</td><td style="padding-right: 12px;">16836.01</td><td style="padding-right: 12px;" >17209.43</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">AUD</td><td style="padding-right: 12px;">16565.48</td><td style="padding-right: 12px;" >16814.4</td></tr></table>                        
             </div>
             <div class="clear" style="height:10px;"></div>
-                                  </div>          <div class="site_content_center" >
-            <div class="boxstyle_center_home" style="height:280px; overflow:hidden; padding-top:7px;">
-	<div class='clus'>           
-      <div class="bxslider">
-      		<div><a href='slider1'><img src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492207985099_s1.jpg' title='' alt='' border='0'></a></div><div><a href='slider2'><img src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492208174538_s2.jpg' title='' alt='' border='0'></a></div><div><a href='slider3'><img src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492208355122_s4.jpg' title='' alt='' border='0'></a></div>      </div> 
-    </div>     
-</div>
+                                  </div>          
+<div class="site_content_center" >
+    <?php echo $bannerhome?>
 <div class="clear" style="height:8px;"></div>
  
 
@@ -197,10 +185,13 @@
           <div class="site_content_right" >
 
             
-            <div class="head_title_right"><span>HỖ TRỢ TRỰC TUYẾN</span></div>
-            <div class="boxstyle_right">
-                <div class='nick'><a href='skype:phuong.nguyen_it?chat' target='_blank'><img src='http://c.skype.com/i/images/logos/skype_logo.png' width='105' height='47' border='0'></a><br><strong>Kinh doanh</strong></div><div class='nick'><a href='skype:phuong.nguyen_demo?chat' target='_blank'><img src='http://c.skype.com/i/images/logos/skype_logo.png' width='105' height='47' border='0'></a><br><strong>Chăm sóc khách hàng</strong></div>                <div class="clear" style="height:0px;"></div>              
-            </div>
+            <?php if(@count($rightsitebar)){ ?>
+            
+                <?php foreach($rightsitebar as $item){ ?>
+                <?php echo @$item?>
+                <?php } ?>
+            
+            <?php } ?>
             <div class="clear" style="height:10px;"></div>
                                     <div class="head_title_right"><span>SẢN PHẨM ĐẶT BIỆT</span></div>
             <div class="boxstyle_right">
