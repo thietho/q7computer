@@ -57,12 +57,6 @@ class ControllerCorePostcontent extends Controller
 		unset($this->data['nhomhuong'][0]);
 		
 		$this->data['nhanhieu'] = $this->model_core_category->getChild('nhanhieu');
-		unset($this->data['nhanhieu'][count($this->data['nhanhieu'])-1]);
-		$brandother = $this->model_core_category->getChild('brandother');
-		foreach($brandother as $cat)
-		{
-			$this->data['nhanhieu'][] = $cat;
-		}
 		//$this->model_core_category->getTree("nhanhieu",$this->data['nhanhieu']);
 		//unset($this->data['nhanhieu'][0]);
 		//print_r(@$this->data['nhanhieu']);

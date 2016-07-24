@@ -29,12 +29,8 @@ class ControllerModuleProduct extends Controller
 	{	
 		
 		$this->data['nhanhieu'] = $this->model_core_category->getChild('nhanhieu');
-		unset($this->data['nhanhieu'][count($this->data['nhanhieu'])-1]);
-		$brandother = $this->model_core_category->getChild('brandother');
-		foreach($brandother as $cat)
-		{
-			$this->data['nhanhieu'][] = $cat;
-		}
+		
+		
 		
 		$this->data['status'] = array();
 		$this->model_core_category->getTree("status",$this->data['status']);
