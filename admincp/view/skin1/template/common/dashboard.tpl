@@ -50,21 +50,39 @@
                 </p>
             </div>
             <div>
-            	
-                
-                <?php for($i=1;$i<=4;$i++){?>
+            	<?php foreach($statusPro as $key => $val){ ?>
             	<p>
-                    <label>Quảng cáo <?php echo @$i?></label>
-                    <input type="hidden" id="qc<?php echo @$i?>_fileid" name="qc<?php echo @$i?>_fileid" value="<?php echo @$qc[$i]['fileid']?>"/><br />
-                    	(250px x 250px)
-                        <img id="qc<?php echo @$i?>_preview" src="<?php echo @$qc[$i]['imagethumbnail']?>"/>
-                        <input type="button" class="button" value="<?php echo @$entry_photo ?>" onclick="browserFile('qc<?php echo @$i?>','single')"/>
-                        (1045px x 540px)
-                        <input type="hidden" id="qcbanner<?php echo @$i?>_fileid" name="qcbanner<?php echo @$i?>_fileid" value="<?php echo @$qc[$i]['fileid']?>"/>
-                        <img id="qcbanner<?php echo @$i?>_preview" src="<?php echo @$qcbanner[$i]['imagethumbnail']?>"/>
-                        <input type="button" class="button" value="<?php echo @$entry_photo ?>" onclick="browserFile('qcbanner<?php echo @$i?>','single')"/>
+                	<label><?php echo $val?></label>
+                    <input type="button" class="button" value="Chọn sản phẩm" onClick="browseProduct('add<?php echo $key?>()');">
+                    <div id="<?php echo $key?>"><?php echo $item[$key]?></div>
+                    <div class="clear"></div>
                 </p>
-                <?php }?>
+                <script language="javascript">
+				function add<?php echo $key?>()
+				{
+					$('.selectProduct').click(function(e) {
+							var obj = new Object();
+							obj.id = 0;
+							obj.mediaid = $(this).attr('ref');
+							obj.imagepath = $(this).attr('image');
+							obj.title = $(this).attr('title');
+							obj.code = $(this).attr('code');
+							obj.unit = $(this).attr('unit');
+							obj.price = $(this).attr('price');
+							obj.pricepromotion = $(this).attr('pricepromotion');
+							obj.discountpercent = $(this).attr('discountpercent');
+							obj.productname = $(this).attr('productname');
+							obj.brandname = $(this).attr('brandname');
+							
+							var str = '<div class="left dashboardproduct"><img src="'+ obj.imagepath +'">'+ obj.productname +'<input type="hidden" name="<?php echo $key?>[]" value="'+ obj.mediaid +'"><input type="button" class="button btn_removeProduct" value="Xóa"></div>';
+							
+							$('#<?php echo $key?>').append(str);
+							$("#popupbrowseproduct").dialog("close");
+							intRemove();
+					});
+				}
+				</script>
+                <?php } ?>
             </div>
         </form>
     
@@ -90,16 +108,13 @@ function save()
 		}
 	);
 }
-var index = 0;
-function addRow(obj)
+function intRemove()
 {
-	var str ='<tr id="row'+index+'">';
-	str += '<td><input type="hidden" id="film'+index+'" name="film['+index+']" value="'+obj.id+'"/><span id="film'+index+'_name">'+obj.moviename+'</span></td>';
-	str += '<td><img id="film'+index+'_icon" src="'+obj.icone+'"/></td>';
-	str += '<td><input type="button" class="button" value="Chọn film" onclick="selectFilm(\'film'+index+'\',\'edit\')"/><input type="button" class="button" value="X" onclick="$(\'#row'+index+'\').remove()"/></td>';
-	str += '</tr>';
-	$('#listfilm').append(str);
-	index++;
+	$('.btn_removeProduct').click(function(e) {
+		$(this).parent('div').remove();
+	});
 }
-
+$(document).ready(function(e) {
+    intRemove()
+});
 </script>

@@ -3,8 +3,13 @@ class ControllerCommonDashboard extends Controller
 {
 	function __construct() 
 	{
-		
 		@$this->load->helper('image');
+		$this->data['statusPro'] = array(
+										'sanphamhot' => 'Sản phẩm hot',
+										'sanphamkhuyenmai' => 'Sản phẩm khuyến mãi',
+										'sanphammoi' => 'Sản phẩm mới',
+										'sanphamdatbiet' => 'Sản phẩm đặt biệt',
+										);
 	}
 	function index()
 	{	
@@ -20,7 +25,7 @@ class ControllerCommonDashboard extends Controller
 		
 		@$this->load->model("core/media");
 		@$this->load->model("core/category");
-		
+		@$this->load->helper('image');
 		@$this->data['item']['mediaid'] = "setting";
 		@$this->data['item']['Title'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'Title');
 		@$this->data['item']['Slogan'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'Slogan');
@@ -28,25 +33,19 @@ class ControllerCommonDashboard extends Controller
 		@$this->data['item']['EmailContact'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'EmailContact');
 		@$this->data['item']['HeaderBill'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'HeaderBill');
 		@$this->data['item']['Keyword'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'Keyword');
-		@$this->data['item']['Description'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'Description');
+		@$this->data['item']['Description'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'Description');	
 		
-		
-		@$this->data['item']['brochure'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'brochure');
-		@$this->data['item']['background'] = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'background');
-		$listfilm = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'listfilm');
-		@$arr_filmid = split(',',$listfilm);
-		
-		
-		
-		
-		for($i=1;$i<=4;$i++)
-		{	
-			$fileid = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'qc'.$i);	
-			@$this->data['qc'][$i] = @$this->model_core_file->getFile($fileid);
-			@$this->data['qc'][$i]['imagethumbnail'] = HelperImage::resizePNG(@$this->data['qc'][$i]['filepath'], 100, 0);
-			$fileid = @$this->model_core_media->getInformation(@$this->data['item']['mediaid'], 'qcbanner'.$i);	
-			@$this->data['qcbanner'][$i] = @$this->model_core_file->getFile($fileid);
-			@$this->data['qcbanner'][$i]['imagethumbnail'] = HelperImage::resizePNG(@$this->data['qcbanner'][$i]['filepath'], 100, 0);
+		foreach($this->data['statusPro'] as $key => $val)
+		{
+			$list_mediaid = json_decode(@$this->model_core_media->getInformation(@$this->data['item']['mediaid'],$key));
+			
+			foreach($list_mediaid as $mediaid)
+			{
+				$media = $this->model_core_media->getItem($mediaid);
+				
+				$this->data['item'][$key] .= '<div class="left dashboardproduct"><img src="'. HelperImage::resizePNG($media['imagepath'], 100, 100) .'">'. @$this->document->productName($media) .'<input type="hidden" name="'. $key .'[]" value="'. $media['mediaid'] .'"><input type="button" class="button btn_removeProduct" value="Xóa"></div>';
+			}
+			
 			
 		}
 	}
@@ -65,13 +64,9 @@ class ControllerCommonDashboard extends Controller
 		@$this->model_core_media->saveInformation($data['mediaid'],"Keyword",$data['Keyword']);
 		@$this->model_core_media->saveInformation($data['mediaid'],"Description",$data['Description']);
 		
-		@$this->model_core_media->saveInformation($data['mediaid'],"brochure",$data['brochure']);
-		@$this->model_core_media->saveInformation($data['mediaid'],"background",$data['background']);
-		
-		for($i=1;$i<=4;$i++)
+		foreach($this->data['statusPro'] as $key => $val)
 		{
-			@$this->model_core_media->saveInformation($data['mediaid'],"qc".$i,$data['qc'.$i.'_fileid']);
-			@$this->model_core_media->saveInformation($data['mediaid'],"qcbanner".$i,$data['qcbanner'.$i.'_fileid']);
+			@$this->model_core_media->saveInformation($data['mediaid'],$key,json_encode($data[$key]));
 		}
 		
 		@$this->data['output'] = "true";

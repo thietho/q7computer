@@ -38,7 +38,7 @@ class ControllerPageHome extends Controller
 		
 			$arr = array("bannerhome",0,"",$template);
 			$this->data['bannerhome'] = $this->loadModule('module/block','getList',$arr);
-			//San pham hot
+			//San khuyen mai
 			/*$template = array(
 								  'template' => "module/product_list.tpl",
 								  'width' => IMG_PROLIST,
@@ -47,40 +47,16 @@ class ControllerPageHome extends Controller
 								  'heightpreview' =>450
 								  );
 						  
-			$medias = $this->getSanPhanHot();
+			$medias = $this->getProduct('sanphamkhuyenmai');
 			
 			$arr = array($sitemap['sitemapid'],0,$sitemap['sitemapname'],$template,$medias);
 			$this->data['producthome']['sanphamhot']['title'] ="Sản phẩm hot";
-			$this->data['producthome']['sanphamhot']['data'] = $this->loadModule('module/productlist','getAll',$arr);*/
+			$this->data['producthome']['sanphamhot']['data'] = $this->loadModule('module/productlist','getAll',$arr)*/;
 			
-			//$this->data['ortherbrand'] .= $this->loadModule('addon/ortherbrand');
-			$this->data['arrbrand'] = array(
-							"Sisley",
-							"Guerlain",
-							"Lancome",
-							"Clarins",
-							"Shiseido",
-							/*"Dior",*/
-							"EsteeLauder",
-							/*"Chanel",*/
-							"Clinique",
-							"LOccitane",
-							
-							"VictoriaSecrect",
-							"bathandbodyworks"
-							);
+			
+			
 					  
-			$this->load->model('core/sitemap');
-			$data_sitemap = array();
-			$this->model_core_sitemap->getTreeSitemap("sanpham", $data_sitemap, $this->member->getSiteId());
-			$this->data['arrsitemapid'] = array();
-			foreach($data_sitemap as $sitemap)
-			{
-				if(@$sitemap['countchild'] == 0)
-				{
-					$this->data['arrsitemapid'][] = $sitemap['sitemapid'];
-				}
-			}
+			
 			
 			//$this->loadBrand();
 			$this->loadSiteBar();
@@ -92,72 +68,25 @@ class ControllerPageHome extends Controller
 		$this->layout="layout/home";
 		$this->render();
 	}
-	
-	public function loadBrand()
-	{
-		/*$arrbrand = array(
-							"EsteeLauder",
-							"Lancome",
-							"Clarins",
-							"Dior",
-							"Chanel",
-							"Sisley",
-							"Clinique",
-							"LOccitane",
-							"Shishedo",
-							"VictoriaSecrect",
-							"bathandbodyworks"
-							);
-		foreach($arrbrand as $brand)
-		{
-			$arr = array("",$brand);
-			$this->data['producthome'][$brand]['title'] =$this->document->getCategory($brand);
-			$this->data['producthome'][$brand]['data'] = $this->loadModule('addon/brand','getList',$arr);
-		}*/
-		@$brand = $this->request->get['brand'];
-		$arr = array("",$brand);
-		if(file_exists(DIR_IMAGE.'logo/'.$brand.'.jpg'))
-		{
-			@$this->data['output'] = '<div class="hl-home-brand"><img src="'.HTTP_SERVER.DIR_IMAGE.'logo/'.$brand.'.jpg"></div>';
-		}
-		else
-		{
-			@$this->data['output'] = "<h1>".$this->document->getCategory($brand)."</h1>";
-		}
-		
-		@$this->data['output'] .= $this->loadModule('addon/brand','getList',$arr);
-		$this->id='content';
-		$this->template='common/output.tpl';
-		$this->render();
-	}
-	
-	public function loadGroup()
-	{
-		@$sitemapid = $this->request->get['sitemapid'];
-		@$device = $this->request->get['device'];
-		$this->load->model('core/sitemap');
-		$siteid = $this->member->getSiteId();
-		$sitemap = $this->model_core_sitemap->getItem($sitemapid, $siteid);
-		$medias = $this->getProduct($sitemap['sitemapid'],"");
-		$template = array(
-								  'template' => "module/product".$device."_list.tpl",
-								  'width' => 180,
-								  'height' =>180,
-								  'widthpreview' => 450,
-								  'heightpreview' =>450
-								  );
-		$arr = array($sitemap['sitemapid'],0,$sitemap['sitemapname'],$template,$medias);
-		
-		@$this->data['output'] = "<h1>".$sitemap['sitemapname']."</h1>";
-       	@$this->data['output'] .= $this->loadModule('module/productlist','getAll',$arr);
-		$this->id='content';
-		$this->template='common/output.tpl';
-		$this->render();
-	}
 	private function loadSiteBar()
 	{
 		//Left sitebar
 		$this->data['leftsitebar']['brand'] = $this->loadModule('sitebar/brand');
+		$list_mediaid = json_decode($this->document->setup['sanphamhot']);
+		$medias = array();
+		foreach($list_mediaid as $mediaid)
+		{
+			$media = $this->model_core_media->getItem($mediaid);
+			$medias[] = $media;
+		}
+		
+		$template = array(
+						  'template' => "sitebar/product_list.tpl",
+						  'width' => 120,
+						  'height' =>0
+						  );
+		$arr = array("",0,"",$template,$medias);
+		$this->data['leftsitebar']['sanphamhot'] = '<div class="head_title"><span>SẢN PHẨM HOT</span></div>'.$this->loadModule('module/productlist','getAll',$arr);
 		/*$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
@@ -172,6 +101,8 @@ class ControllerPageHome extends Controller
 		
 		//Rigth sitebar
 		$this->data['rightsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
+		
+		
 		/*$this->data['rightsitebar']['login'] = $this->loadModule('sitebar/login');
 		$this->data['rightsitebar']['search'] = $this->loadModule('sitebar/search');
 		$this->data['rightsitebar']['cart'] = $this->loadModule('sitebar/cart');
@@ -179,82 +110,22 @@ class ControllerPageHome extends Controller
 		$this->data['rightsitebar']['question'] = $this->loadModule('sitebar/question');*/
 	}
 	
-	function getSanPhanHot()
-	{
-		$this->load->model('core/sitemap');
-		$this->load->model('core/media');
-		$data_media = array();
-		$listmediaid = $this->model_core_media->getInformation("sortsanphamhot","sort");
-		$arrmediaid = array();
-		
-		$arrmediaid = $this->string->referSiteMapToArray($listmediaid);
-			
-		
-			
-		foreach($arrmediaid as $mediaid)
-		{
-			$media = $this->model_core_media->getItem($mediaid);
-			if(@$media['status']== 'active')
-				$data_media[] = $media;
-		}
-			
-		return $data_media;
-		
-	}
 	
-	function getProduct($rootid)
-	{
-		$this->load->model('core/sitemap');
-		$this->load->model('core/media');
-		$data_media = array();
-		$listmediaid = $this->model_core_media->getInformation("sort".$rootid,"sort");
-		$arrmediaidsanphamhot = array();
-		$listmediaidsanphamhot = $this->model_core_media->getInformation("sortsanphamhot","sort");
-		$arrmediaidsanphamhot = $this->string->referSiteMapToArray($listmediaidsanphamhot);
-			
-		$where = " AND mediatype = 'module/product'";
-		$where .= " AND mediaparent = ''";
-		if(@$listmediaid!="")
-		{
-			$arrmediaid = $this->string->referSiteMapToArray($listmediaid);
-			foreach($arrmediaid as $mediaid)
-			{
-				$media = $this->model_core_media->getItem($mediaid);
-				if(@$media['status']== 'active' && !in_array($media['mediaid'],$arrmediaidsanphamhot))
-					$data_media[] = $media;
-			}
-			$where .= " AND mediaid NOT IN ('".implode("','",$arrmediaid)."')";
-		}
-		
-		$siteid = $this->member->getSiteId();
-		$sitemaps = array();
-		
-		if(@$rootid != "")
-		{
-			$this->model_core_sitemap->getTreeSitemap($rootid,$sitemaps, $siteid);
-			$arrsitemapid = $this->string->matrixToArray($sitemaps,"sitemapid");
-		}
-		
-		
-		
-		if(count($arrsitemapid))
-		{
-			foreach($arrsitemapid as $item)
-			{
-				$arr[] = " refersitemap like '%[".$item."]%'";
-			}
-			$where .= "AND (". implode($arr," OR ").")";
-		}
-		
-		if(count($arrmediaidsanphamhot))
-		{
-			$where .= " AND mediaid NOT IN ('".implode("','",$arrmediaidsanphamhot)."')";
-		}
-		//echo $where."<br>";
-		$data = array();
-		$data = $this->model_core_media->getList($where);
-		$data_media = array_merge($data_media,$data);
-		return $data_media;
-	}
+	function getProduct($status)
+    {
+        $this->load->model('core/media');
+        //$siteid = $this->member->getSiteId();
+        //$sitemaps = $this->model_core_sitemap->getListByModule("module/product", $siteid);
+        //$arrsitemapid = $this->string->matrixToArray($sitemaps,"sitemapid");
+        $queryoptions = array();
+        $queryoptions['mediaparent'] = '';
+        $queryoptions['mediatype'] = 'module/product';
+        $queryoptions['refersitemap'] = '%';
+        $queryoptions['groupkeys'] = $status;
+        $data = $this->model_core_media->getPaginationList($queryoptions);
+
+        return $data;
+    }
+	
 }
 ?>

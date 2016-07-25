@@ -286,8 +286,8 @@ class ControllerModuleProductlist extends Controller
 			
 			
 			$imagethumbnail = "";
-			$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
-			$imagetpreview = HelperImage::resizePNG($media['imagepath'], $template['widthpreview'], $template['heightpreview']);
+			@$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
+			@$imagetpreview = HelperImage::resizePNG($media['imagepath'], $template['widthpreview'], $template['heightpreview']);
 			
 			$properties = $this->string->referSiteMapToArray($media['groupkeys']);
 			$this->data['medias'][$i] =$media;

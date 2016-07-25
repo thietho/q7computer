@@ -463,7 +463,7 @@ class ControllerCoreMedia extends Controller
 		$datas = @$this->model_core_media->getList($where);
 		foreach($datas as $key => $media)
 		{
-			$imagepreview = "<img width=100 src='".HelperImage::resizePNG($media['imagepath'], 180, 180)."' >";
+			$imagepreview = "<img width='100' src='".HelperImage::resizePNG($media['imagepath'], 180, 180)."' >";
 			@$datas[$key]['imagepreview'] = $imagepreview;
 			@$datas[$key]['productName'] = @$this->document->productName($media);
 		}

@@ -8,25 +8,8 @@
         
             
             
-      	<div class="head_title"><span>SẢN PHẨM HOT</span></div>
-            <div class="boxstyle">
-				  
-								<div style='border-bottom:1px dotted #CCCCCC; margin:10px;' align='center'>
-								<a href='http://demo154com935.web30s.vn/view_product-2235976/lenovo-ideapad-100-15ibd/'><img alt='Lenovo Ideapad 100 15IBD' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14488721791906_lenovo-8.jpg' width='120' height='auto' class='img_3'></a>
-								<strong><a href='http://demo154com935.web30s.vn/view_product-2235976/lenovo-ideapad-100-15ibd/'><div class='clear do_nho'>8,890,000 VNĐ</div><div class='clear'></div>Lenovo Ideapad 100 15IBD</a></strong>
-								</div>
-							
-								<div style='border-bottom:1px dotted #CCCCCC; margin:10px;' align='center'>
-								<a href='http://demo154com935.web30s.vn/view_product-2235970/lenovo-z5070-core-i3-4030u-vga/'><img alt='Lenovo Z5070/Core i3 4030U/VGA' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14488727471246_lenovo800a.jpg' width='120' height='auto' class='img_3'></a>
-								<strong><a href='http://demo154com935.web30s.vn/view_product-2235970/lenovo-z5070-core-i3-4030u-vga/'><div class='clear do_nho'>106,890,000 VNĐ</div><div class='clear'></div>Lenovo Z5070/Core i3 4030U/VGA</a></strong>
-								</div>
-							
-								<div style='border-bottom:1px dotted #CCCCCC; margin:10px;' align='center'>
-								<a href='http://demo154com935.web30s.vn/view_product-2235966/hp-stream-11-f008tu-celeron-n2840/'><img alt='HP Stream 11-f008TU/Celeron N2840' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14488749279306_hp3.jpg' width='120' height='auto' class='img_3'></a>
-								<strong><a href='http://demo154com935.web30s.vn/view_product-2235966/hp-stream-11-f008tu-celeron-n2840/'><div class='clear do_nho'>4,490,000 VNĐ</div><div class='clear'></div>HP Stream 11-f008TU/Celeron N2840</a></strong>
-								</div>
-							                  <div class="clear" style="height:1px;"></div>
-            </div>
+      	
+            
             <div class="clear" style="height:10px;"></div>
                                     <div class="head_title"><span>BÀI VIẾT HAY</span></div>
             <div class="boxstyle">
