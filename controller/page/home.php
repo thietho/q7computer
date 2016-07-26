@@ -22,6 +22,7 @@ class ControllerPageHome extends Controller
 	{
 		if(@$this->cachehtml->iscacht($this->name) == false)
 		{
+			$this->load->model('core/media');
 			//Brand
 			$template = array(
 						  'template' => "module/category_brand.tpl"
@@ -191,7 +192,7 @@ class ControllerPageHome extends Controller
 	
 	function getProduct($status)
     {
-        $this->load->model('core/media');
+        
         //$siteid = $this->member->getSiteId();
         //$sitemaps = $this->model_core_sitemap->getListByModule("module/product", $siteid);
         //$arrsitemapid = $this->string->matrixToArray($sitemaps,"sitemapid");

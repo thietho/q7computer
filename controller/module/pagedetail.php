@@ -19,7 +19,7 @@ class ControllerModulePagedetail extends Controller
 			$this->response->redirect(HTTP_SERVER);
 		$this->document->title = "Mỹ Lan Beauty Shop - ".$this->data['post']['title'];
 		
-		$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
+		//$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
 		$this->document->meta_keyword = $this->data['post']['keyword'];
 		$this->document->meta_description = $this->data['post']['metadescription'];
 		if(count($this->data['post']) == 0)

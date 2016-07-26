@@ -24,7 +24,7 @@ class ControllerModuleProductlist extends Controller
 		$this->data['content'] = $this->loadModule('module/block','showContent',$arr);
 		$siteid = $this->user->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
-		$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
+		//$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
 		if(@$headername!="")
 			$this->data['sitemap']['sitemapname'] = $headername;
 		
@@ -176,7 +176,7 @@ class ControllerModuleProductlist extends Controller
 		
 		$siteid = $this->user->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
-		$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
+		//$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
 		if(@$headername!="")
 			$this->data['sitemap']['sitemapname'] = $headername;
 		@$this->data['sitemap']['sitemapname'];

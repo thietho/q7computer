@@ -1,34 +1,31 @@
-<div class="ben-three-columns">
-	<?php if(@count($leftsitebar)){ ?>
-	<div class="ben-sidebar ben-left">
-    	<?php foreach($leftsitebar as $item){ ?>
-        <?php echo @$item?>
+<div class="fix960">
+	<div class="site_content_left">
+    	<?php if(@count($leftsitebar)){ ?>
+        	<?php foreach($leftsitebar as $item){ ?>
+        	<?php echo @$item?>
+           	<?php } ?>
         <?php } ?>
-    </div>
-    <?php }?>
-	<div class="ben-right" id="ben-maincontent">
-    	<div class="ben-section">
-        
-        	<?php echo @$brand?>
-            
-            <div class="ben-section-content">
-            	<h1><?php echo @$this->document->breadcrumb?></h1>
-            	<?php echo @$module?>
-            
-            </div>
-            
-        
-        </div>
-    </div>
-    
-    <?php if(@count($rightsitebar)){ ?>
-    <div class="ben-sidebar ben-right">
-    	<?php foreach($rightsitebar as $item){ ?>
-        <?php echo @$item?>
-        <?php } ?>
-    </div>
-    <?php } ?>
-    
-    <div class="clearer">&nbsp;</div>
+     <div class="clear" style="height:10px;"></div>
+                                  </div>          
+<div class="site_content_center" >
+	<div class="head_title_center_home"><?php echo @$breadcrumb?></div>
+    <?php echo @$module?>
 
 </div>
+<div class="site_content_right" >
+
+
+<?php if(@count($rightsitebar)){ ?>
+
+    <?php foreach($rightsitebar as $item){ ?>
+    <?php echo @$item?>
+    <?php } ?>
+
+<?php } ?>
+<div class="clear" style="height:10px;"></div>
+            
+</div>          <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="clear" style="height:8px; clear:left;"></div>
+

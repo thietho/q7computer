@@ -581,11 +581,10 @@ a.dt_changestyle, a.dt_changestyle:link, a.dt_changestyle:visited {
 #main_menu ul li{position: relative;}
 #main_menu ul ul {
 	position: absolute;
-	top: 50px;
+	
 	left: 0px;
 	width: auto;
 	min-width: 100%;
-	 padding: 10px 0;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 999999;
@@ -594,6 +593,10 @@ a.dt_changestyle, a.dt_changestyle:link, a.dt_changestyle:visited {
 	-ms-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
+}
+#main_menu ul ul ul{
+	margin-left:182px;
+	top:0 !important;
 }
 #main_menu ul li:hover ul {
 	top: 45px;
