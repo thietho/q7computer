@@ -17,3 +17,4 @@
   <?php } ?>
   <div class="clear" style="height:0px;"></div>
 </div>
+<div class="clear" style="height:10px;"></div>

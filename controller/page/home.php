@@ -38,6 +38,53 @@ class ControllerPageHome extends Controller
 		
 			$arr = array("bannerhome",0,"",$template);
 			$this->data['bannerhome'] = $this->loadModule('module/block','getList',$arr);
+			
+			$list_mediaid = json_decode($this->document->setup['sanphamkhuyenmai']);
+			$medias = array();
+			foreach($list_mediaid as $mediaid)
+			{
+				$media = $this->model_core_media->getItem($mediaid);
+				$medias[] = $media;
+			}
+			$template = array(
+							  'template' => "module/product_list.tpl",
+							  'width' => 150,
+							  'height' =>0
+							  );
+			$arr = array("",0,"",$template,$medias);
+			$this->data['sanphamkhuyenmai'] = $this->loadModule('module/productlist','getAll',$arr);
+			
+			$list_mediaid = json_decode($this->document->setup['sanphammoi']);
+			$medias = array();
+			foreach($list_mediaid as $mediaid)
+			{
+				$media = $this->model_core_media->getItem($mediaid);
+				$medias[] = $media;
+			}
+			$template = array(
+							  'template' => "module/product_list.tpl",
+							  'width' => 150,
+							  'height' =>0
+							  );
+			$arr = array("",0,"",$template,$medias);
+			$this->data['sanphammoi'] = $this->loadModule('module/productlist','getAll',$arr);
+			//Bai viet moi
+			$template = array(
+							  'template' => "home/news_list.tpl",
+							  'width' => 120,
+							  'height' =>0
+							  );
+			$arr = array("bai-viet-moi",0,"",$template);
+			$this->data['baivietmoi'] = $this->loadModule('module/pagelist','getList',$arr);
+			
+			//Bai viet nổi bật
+			$template = array(
+							  'template' => "home/news_list2.tpl",
+							  'width' => 55,
+							  'height' =>0
+							  );
+			$arr = array("bai-viet-noi-bat",0,"",$template);
+			$this->data['baivietnoibat'] = $this->loadModule('module/pagelist','getList',$arr);
 			//San khuyen mai
 			/*$template = array(
 								  'template' => "module/product_list.tpl",
@@ -79,7 +126,6 @@ class ControllerPageHome extends Controller
 			$media = $this->model_core_media->getItem($mediaid);
 			$medias[] = $media;
 		}
-		
 		$template = array(
 						  'template' => "sitebar/product_list.tpl",
 						  'width' => 120,
@@ -87,7 +133,6 @@ class ControllerPageHome extends Controller
 						  );
 		$arr = array("",0,"",$template,$medias);
 		$this->data['leftsitebar']['sanphamhot'] = '<div class="head_title"><span>SẢN PHẨM HOT</span></div>'.$this->loadModule('module/productlist','getAll',$arr);
-		
 		$template = array(
 						  'template' => "sitebar/news_list.tpl",
 						  'width' => 55,
@@ -111,7 +156,30 @@ class ControllerPageHome extends Controller
 		
 		//Rigth sitebar
 		$this->data['rightsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
+		$list_mediaid = json_decode($this->document->setup['sanphamdatbiet']);
+		$medias = array();
+		foreach($list_mediaid as $mediaid)
+		{
+			$media = $this->model_core_media->getItem($mediaid);
+			$medias[] = $media;
+		}
+		$template = array(
+						  'template' => "sitebar/product_list.tpl",
+						  'width' => 120,
+						  'height' =>0
+						  );
+		$arr = array("",0,"",$template,$medias);
+		$this->data['rightsitebar']['sanphamdatbiet'] = '<div class="head_title_right"><span>SẢN PHẨM ĐẶT BIỆT</span></div>'.$this->loadModule('module/productlist','getAll',$arr);
+		$template = array(
+						  'template' => "sitebar/news_list.tpl",
+						  'width' => 55,
+						  'height' =>0
+						  );
+		$arr = array("tin-tuc-hot",0,"",$template);
+		$this->data['rightsitebar']['tin-tuc-hot'] = '<div class="head_title_right"><span>TIN TỨC HOT</span></div>'.$this->loadModule('module/pagelist','getList',$arr);
 		
+		$arr = array('doi-tac');
+		$this->data['rightsitebar']['weblink'] = '<div class="head_title_right"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
 		
 		/*$this->data['rightsitebar']['login'] = $this->loadModule('sitebar/login');
 		$this->data['rightsitebar']['search'] = $this->loadModule('sitebar/search');

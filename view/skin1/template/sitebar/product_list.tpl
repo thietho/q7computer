@@ -11,5 +11,5 @@ if(@count($medias))
 	<?php } ?>
 	<div class="clear" style="height:1px;"></div>
 </div>
-    
 <?php } ?>
+<div class="clear" style="height:10px;"></div>

@@ -29,15 +29,16 @@
                     <label>Link</label><br />
                     <textarea name="Link"><?php echo @$item['Link']?></textarea>
                 </p>
+                
                 <p id="pnImage">
                     <label for="image"><?php echo @$entry_image?></label><br />
-                  
+                    
                     <input type="button" class="button" value="<?php echo @$entry_photo ?>" onclick="browserFile('imageid','single')"/><br />
                     <img id="imageid_preview" src="<?php echo @$imagethumbnail?>" onclick="showFile($('#imageid_filepath').val())"/>
                     <input type="hidden" id="imageid_filepath" name="imagepath" value="<?php echo @$post['imagepath']?>" />
                     <input type="hidden" id="imageid_fileid" name="imageid" value="<?php echo @$post['imageid']?>" />
+                    
                 </p>
-                
                 
                 <div id="errorupload" class="error" style="display:none"></div>
                 
@@ -51,7 +52,7 @@
 </div>
 
 <script language="javascript">
-var DIR_UPLOADPHOTO = "<?php echo @$DIR_UPLOADPHOTO?>";
+
 function save()
 {
 	$.blockUI({ message: "<h1><?php echo @$announ_infor ?></h1>" }); 
@@ -77,80 +78,4 @@ function save()
 		}
 	);
 }
-
-function browserFileImage()
-{
-    //var re = openDialog("?route=core/file&dialog=true",800,500);
-	/*$('#handler').val('image');
-	$('#outputtype').val('image');
-	showPopup("#popup", 800, 500);
-	$("#popup").html("<img src='view/skin1/image/loadingimage.gif' />");
-	$("#popup").load("?route=core/file&dialog=true");*/
-	
-	$("#popup").attr('title','Chọn hình');
-		$( "#popup" ).dialog({
-			autoOpen: false,
-			show: "blind",
-			hide: "explode",
-			width: $(document).width()-100,
-			height: window.innerHeight,
-			modal: true,
-			
-		});
-	
-		$("#popup").dialog("open");	
-		$("#popup-content").html(loading);	
-		$("#popup-content").load("?route=core/file&dialog=true&type=single",function(){
-			
-		});
-		
-}
-function intSeleteFile(type)
-{
-	
-	switch(type)
-	{
-		case "single":
-			$('.filelist').click(function(e) {
-				$('#imagepreview').attr('src',$(this).attr('imagethumbnail'));
-				$('#imageid').val(this.id);
-				$('#imagepath').val($(this).attr('filepath'));
-				$('#imagethumbnail').val($(this).attr('imagethumbnail'));
-				$("#popup").dialog( "close" );
-			});			
-			break;
-			
-		case "editor":
-			$('.filelist').click(function(e) {
-
-				
-				width = "";
-							
-				var value = "<img src='<?php echo HTTP_IMAGE?>"+$(this).attr('filepath')+"'/>";
-				
-				var oEditor = CKEDITOR.instances['editor1'] ;
-				
-				
-				// Check the active editing mode.
-				if (oEditor.mode == 'wysiwyg' )
-				{
-					// Insert the desired HTML.
-					oEditor.insertHtml( value ) ;
-					
-					var temp = oEditor.getData()
-					oEditor.setData( temp );
-				}
-				else
-					alert( 'You must be on WYSIWYG mode!' ) ;
-				$("#popup").dialog( "close" );
-			});			
-			break;
-		case "multi":
-			$('.filelist').click(function(e) {
-                $('#popup-seletetion').append($(this))
-            });
-			break;
-	}
-}
 </script>
-<script src='<?php echo DIR_JS?>ajaxupload.js' type='text/javascript' language='javascript'> </script>

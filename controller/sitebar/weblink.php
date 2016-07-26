@@ -1,13 +1,13 @@
 <?php
 class ControllerSitebarWeblink extends Controller
 {
-	public function index()
+	public function index($sitemapid)
 	{
 		$this->load->model("core/media");
 		$this->load->model("core/sitemap");
 		$this->load->helper('image');
 		
-		$sitemapid = "lienket";
+		
 		$siteid = $this->member->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		
@@ -30,7 +30,7 @@ class ControllerSitebarWeblink extends Controller
 			$imagethumbnail = "";
 			if(@$media['imagepath'] != ""  )
 			{
-				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], 228,228);
+				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], 175,0);
 			}
 			
 			$weblink = $this->model_core_media->getInformation($media['mediaid'], "Link");
