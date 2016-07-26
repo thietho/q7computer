@@ -1,7 +1,7 @@
 <?php
 class ControllerModulePagelist extends Controller
 {
-	public function getList($sitemapid="", $count = 10,$headername ="", $template = array(),$medias=array())
+	public function getList($sitemapid="", $count = 0,$headername ="", $template = array(),$medias=array())
 	{
 		$this->load->model("core/media");
 		$this->load->model("core/sitemap");
@@ -52,7 +52,7 @@ class ControllerModulePagelist extends Controller
 				$this->data['medias'][] = array(
 					'mediaid' => $media['mediaid'],
 					'title' => $media['title'],
-					'summary' => html_entity_decode($media['summary']),
+					'summary' => strip_tags(html_entity_decode($media['summary'])),
 					'imagethumbnail' => $imagethumbnail,
 					'statusdate' => $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/"),
 					'link' => $link

@@ -30,7 +30,7 @@
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>md5.js"></script>
     
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>jquery.mCustomScrollbar.concat.min.js"></script>
-	
+	<script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>common.js"></script>
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>global.css" rel="stylesheet" type="text/css">
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>divbox.css" rel="stylesheet" type="text/css">

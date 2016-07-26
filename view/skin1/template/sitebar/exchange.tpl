@@ -25,9 +25,7 @@
             <div id="fragment-tigia" class="tabs-container">
             	<?php echo @$tygia?>
             </div>
-            <div id="fragment-giavang" class="tabs-container">
-            	<?php echo @$giavang?>
-            </div>
+            
          </div>
     	
     	

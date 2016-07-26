@@ -5,52 +5,7 @@
         	<?php echo @$item?>
            	<?php } ?>
         <?php } ?>
-        
-            
-            
-      	
-            
-            <div class="clear" style="height:10px;"></div>
-                                    <div class="head_title"><span>BÀI VIẾT HAY</span></div>
-            <div class="boxstyle">
-                  <marquee id="marqueelup2" onmouseover="marqueelup2.stop()" onmouseout="marqueelup2.start()" scrollamount="2" scrolldelay="100" direction="up" width="100%" height="180">
-                  <table width='100%' border=0 style='border-collapse:collapse'>
-                                        <tr><td><div class='left_news_hay' style='height:17px; overflow:hidden;'><strong><a href='http://demo154com935.web30s.vn/view-116351/ideapad-100-cua-lenovo-do-suc-voi-chromebook/'>IdeaPad 100 của Lenovo \"đọ sức\" với Chromebook</a></strong></div></td></tr>
-                                        <tr class='row_title_line'>
-                                          <td height='50' valign='top'><table width='100%'><tr><td width='30'><a href='http://demo154com935.web30s.vn/view-116351/ideapad-100-cua-lenovo-do-suc-voi-chromebook/'><img alt='IdeaPad 100 của Lenovo \"đọ sức\" với Chromebook' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492846104536_img20150907223836202.jpg' width='55' height='40' class='border_images'></a></td><td valign='top'>Định hướng dòng máy tính xách tay hoạt động cơ bản </td><tr></table></td>
-                                        </tr>
-                                      </table>
-                                      <table width='100%' border=0 style='border-collapse:collapse'>
-                                        <tr><td><div class='left_news_hay' style='height:17px; overflow:hidden;'><strong><a href='http://demo154com935.web30s.vn/view-116357/can-canh-macbook-mong--tai--xinh-moi-cua-apple-tai-viet-nam/'>Cận cảnh MacBook \"mỏng - tài - xinh\" mới của Apple tại Việt Nam</a></strong></div></td></tr>
-                                        <tr class='row_title_line'>
-                                          <td height='50' valign='top'><table width='100%'><tr><td width='30'><a href='http://demo154com935.web30s.vn/view-116357/can-canh-macbook-mong--tai--xinh-moi-cua-apple-tai-viet-nam/'><img alt='Cận cảnh MacBook \"mỏng - tài - xinh\" mới của Apple tại Việt Nam' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492849623718_apple_macbook_pro_15_35781448-4070.jpg' width='55' height='40' class='border_images'></a></td><td valign='top'>Phiên bản MacBook 2015 tại Việt Nam với ổ cứng dung </td><tr></table></td>
-                                        </tr>
-                                      </table>
-                                      <table width='100%' border=0 style='border-collapse:collapse'>
-                                        <tr><td><div class='left_news_hay' style='height:17px; overflow:hidden;'><strong><a href='http://demo154com935.web30s.vn/view-116358/co-hoi-nhan-ngay-laptop-hp-stream-khi-chia-se-anh-facebook/'>Cơ hội nhận ngay laptop HP Stream khi chia sẻ ảnh Facebook</a></strong></div></td></tr>
-                                        <tr class='row_title_line'>
-                                          <td height='50' valign='top'><table width='100%'><tr><td width='30'><a href='http://demo154com935.web30s.vn/view-116358/co-hoi-nhan-ngay-laptop-hp-stream-khi-chia-se-anh-facebook/'><img alt='Cơ hội nhận ngay laptop HP Stream khi chia sẻ ảnh Facebook' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492850157936_img20150321103019418.jpg' width='55' height='40' class='border_images'></a></td><td valign='top'>Nhân sự kiện chào đón notebook HP Stream ra mắt tại </td><tr></table></td>
-                                        </tr>
-                                      </table>
-                                      <table width='100%' border=0 style='border-collapse:collapse'>
-                                        <tr><td><div class='left_news_hay' style='height:17px; overflow:hidden;'><strong><a href='http://demo154com935.web30s.vn/view-116361/hp-ra-mat-dong-notebook-probook-400-series-the-he-g2-moi/'>HP ra mắt dòng notebook ProBook 400 Series thế hệ G2 mới</a></strong></div></td></tr>
-                                        <tr class='row_title_line'>
-                                          <td height='50' valign='top'><table width='100%'><tr><td width='30'><a href='http://demo154com935.web30s.vn/view-116361/hp-ra-mat-dong-notebook-probook-400-series-the-he-g2-moi/'><img alt='HP ra mắt dòng notebook ProBook 400 Series thế hệ G2 mới' src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492852019166_9-1-201513-807337088-2812-1420992750.jpg' width='55' height='40' class='border_images'></a></td><td valign='top'>HP vừa cho ra mắt dòng máy tính xách tay tên </td><tr></table></td>
-                                        </tr>
-                                      </table>
-                                                        </marquee>                  <div class="clear" style="height:0px;"></div>
-            </div>
-            <div class="clear" style="height:10px;"></div>
-                                    <div class="head_title"><span>ĐỐI TÁC</span></div>
-            <div class="boxstyle">
-				  <div class='banner'><a href='left1' target='_blank'><img src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492205164422_t1.jpg' width='190' height='189.458689459' border='0'></a></div><div class='banner'><a href='left2' target='_blank'><img src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492205329563_t2.jpg' width='190' height='189.458689459' border='0'></a></div><div class='banner'><a href='left3' target='_blank'><img src='http://demo154com935.web30s.vn/datafiles/1/khong_xoa/thumb_14492205488719_t3.jpg' width='190' height='189.458689459' border='0'></a></div>                  <div class="clear" style="height:1px;"></div>
-            </div>
-            <div class="clear" style="height:10px;"></div>
-                                    <div class="head_title"><span>TỶ GIÁ</span></div>
-            <div class="boxstyle">
-            	<table width='100%' border='1' style='border-collapse:collapse;'><td style="font-weight: bold;text-align: left;width:45%;"></td><td style="padding-right: 12px;"><strong>MUA</strong></td><td style="padding-right: 12px;" ><strong>BÁN</strong></td><tr><td style="font-weight: bold;text-align: left;width:45%;">USD</td><td style="padding-right: 12px;">22265</td><td style="padding-right: 12px;" >22335</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">THB</td><td style="padding-right: 12px;">624.51</td><td style="padding-right: 12px;" >650.58</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">SGD</td><td style="padding-right: 12px;">16284.42</td><td style="padding-right: 12px;" >16545.76</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">SEK</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >2630.63</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">SAR</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >6166.33</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">RUB</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >389.09</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">NOK</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >2667.31</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">MYR</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >5552.73</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">KWD</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >76444.14</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">KRW</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >20.26</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">JPY</td><td style="padding-right: 12px;">207.63</td><td style="padding-right: 12px;" >211.6</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">INR</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >344.38</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">HKD</td><td style="padding-right: 12px;">2837.74</td><td style="padding-right: 12px;" >2894.83</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">GBP</td><td style="padding-right: 12px;">29075.63</td><td style="padding-right: 12px;" >29542.26</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">EUR</td><td style="padding-right: 12px;">24430.61</td><td style="padding-right: 12px;" >24723.1</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">DKK</td><td style="padding-right: 12px;">0</td><td style="padding-right: 12px;" >3361.4</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">CHF</td><td style="padding-right: 12px;">22346.1</td><td style="padding-right: 12px;" >22750.19</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">CAD</td><td style="padding-right: 12px;">16836.01</td><td style="padding-right: 12px;" >17209.43</td></tr><tr><td style="font-weight: bold;text-align: left;width:45%;">AUD</td><td style="padding-right: 12px;">16565.48</td><td style="padding-right: 12px;" >16814.4</td></tr></table>                        
-            </div>
-            <div class="clear" style="height:10px;"></div>
+     <div class="clear" style="height:10px;"></div>
                                   </div>          
 <div class="site_content_center" >
     <?php echo $bannerhome?>

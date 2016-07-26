@@ -7,12 +7,13 @@ class ControllerCommonTygia extends Controller
 		{
     		$xml = simplexml_load_file('http://www.vietcombank.com.vn/exchangerates/ExrateXML.aspx');
 			$arr=$this->attributestoArr($xml);
-			$this->data['Tygia']['USD']=$this->searchTigia($arr,"CurrencyCode","USD");
+			
+			/*$this->data['Tygia']['USD']=$this->searchTigia($arr,"CurrencyCode","USD");
 			$this->data['Tygia']['AUD']=$this->searchTigia($arr,"CurrencyCode","AUD");
 			$this->data['Tygia']['EUR']=$this->searchTigia($arr,"CurrencyCode","EUR");
 			$this->data['Tygia']['JPY']=$this->searchTigia($arr,"CurrencyCode","JPY");
-			$this->data['Tygia']['GBP']=$this->searchTigia($arr,"CurrencyCode","GBP");
-			
+			$this->data['Tygia']['GBP']=$this->searchTigia($arr,"CurrencyCode","GBP");*/
+			$this->data['Tygia'] = $arr;
 			
 			$this->id="content";
 			$this->template="common/tygia.tpl";
