@@ -19,9 +19,11 @@
 <meta property="og:url" content="<?php echo @$url?>">
 <meta property="og:description" content="<?php echo @$meta_description?>">
 <?php echo @$meta_image?>
-<meta name="google-site-verification" content="yqhMNGN6WGMm8jAKo0k6AHUjo71zXAQN7uEHPuo-BG8" />
+
 </head>
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>jquery-1.8.2.min.js"></script>
+    <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/jquery-ui.js'></script>
+    <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/jquery.lazy.js'></script>
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>divbox.js"></script>
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>me.js"></script>
     <script type='text/javascript' src='<?php echo HTTP_SERVER.DIR_JS?>jquery.easing.1.3.js'></script> 
@@ -31,12 +33,19 @@
     
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>common.js"></script>
+    <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>cart.js"></script>
+    
+    <link rel='stylesheet' type='text/css' href='<?php echo HTTP_SERVER.DIR_VIEW?>css/jquery-ui.css'>
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>global.css" rel="stylesheet" type="text/css">
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>divbox.css" rel="stylesheet" type="text/css">
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>bxslider.css" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="<?php echo HTTP_SERVER.DIR_CSS?>style.css" />
-	   
+    
+<script language="javascript">
+var HTTP_SERVER = '<?php echo HTTP_SERVER?>';
+var DIR_COMPONENT = '<?php echo HTTP_SERVER.DIR_COMPONENT?>';
+</script>	   
 <body style=" ">
 	<div style="display:none"><?php echo @$meta_keyword?></div>
     

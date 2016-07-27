@@ -714,3 +714,44 @@ a.afooter, a.afooter:link, a.afooter:visited {
 .google_adword_footer_global a {
     color: #333;
 }
+.flagdiscount
+{
+	background: url(../image/flag-discount.png) no-repeat;
+    width: 23px;
+    height: 24px;
+    padding-left: 24px;
+    color: #fff;
+    font-size: 0.8em;
+    margin-left: 107px;
+	margin-top:3px;
+    position: absolute;
+	opacity:0.8;
+}
+.flagdiscountsitebar
+{
+	background: url(../image/flag-discount.png) no-repeat;
+    width: 23px;
+    height: 24px;
+    padding-left: 24px;
+    color: #fff;
+    font-size: 0.8em;
+    margin-left: 107px;
+    position: absolute;
+	opacity:0.8;
+}
+.site_content_right .flagdiscountsitebar
+{
+	background: url(../image/flag-discount.png) no-repeat;
+    width: 23px;
+    height: 24px;
+    padding-left: 24px;
+    color: #fff;
+    font-size: 0.8em;
+    margin-left: 97px;
+    position: absolute;
+	opacity:0.8;
+}
+.btncart
+{
+	cursor:pointer;
+}

@@ -14,7 +14,7 @@
                 width: 90%;
             }
         </style>
-        <script type='text/javascript' src='<?php echo HTTP_SERVER.DIR_JS?>jquery.mobile.customized.min.js'></script>
+        
         <script type='text/javascript' src='<?php echo HTTP_SERVER.DIR_JS?>camera.min.js'></script> 
         <script>
 

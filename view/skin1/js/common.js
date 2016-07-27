@@ -350,3 +350,6 @@ function loadLazy() {
         }
     });
 }
+$(document).ready(function(e) {
+    loadLazy();
+});

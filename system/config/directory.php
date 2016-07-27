@@ -27,7 +27,7 @@ $filename = DIR_FILE."db/setting.json";;
 @fclose($handle);
 
 define('SKIN', 'skin1');
-define('IMG_PROLIST', '180');
+define('IMG_PROLIST', 150);
 define('DIR_VIEW','view/'.SKIN.'/');
 define('DIR_TEMPLATE','view/'.SKIN.'/template/');
 define('DIR_IMAGE', 'view/'.SKIN.'/image/');
