@@ -755,3 +755,10 @@ a.afooter, a.afooter:link, a.afooter:visited {
 {
 	cursor:pointer;
 }
+.loading {    
+    background: url('images/loading.gif') center center no-repeat !important ;
+	background-repeat: no-repeat !important;
+	background-position: 50% 50% !important;
+	width: 100%;
+    height: 150px !important;
+}

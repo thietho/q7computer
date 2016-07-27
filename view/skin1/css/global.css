@@ -844,7 +844,7 @@ a.pro_slide_prev.disabled, a.pro_slide_next.disabled {
   overflow: hidden;
 }
 .cloud-zoom-loading, img.loading {
-  background: url(../images/loading.gif) no-repeat scroll center transparent;
+  background: url(images/loading.gif) no-repeat scroll center transparent;
 }
 .nomargin {
   line-height: 120%;
