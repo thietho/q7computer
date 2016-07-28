@@ -1,4 +1,8 @@
 <div>
+	<h3>Kích hoạt tài khoản</h3>
+    <p>Mã kích hoạt đã giử vào email của bạn!</p>
+</div>
+<div>
 	<form id="frmActive" method="post">
     	<div id="error" class="ben-error" style="display:none"></div>
     	<table>

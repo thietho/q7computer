@@ -16,10 +16,10 @@ class ControllerModuleInformation extends Controller
 		$siteid = $this->user->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		//$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
-		$this->document->breadcrumb = $this->data['sitemap']['breadcrumb'];
+		//$this->document->breadcrumb = $this->data['sitemap']['breadcrumb'];
 		
 		$this->data['post'] = $this->model_core_media->getItem($this->member->getSiteId().$sitemapid);
-		$this->document->title .= " - ".$this->data['post']['title'];
+		@$this->document->title .= " - ".$this->data['post']['title'];
 		if(count($this->data['post']) == 0)
 		{
 			$this->data['post']['description'] = "Updating...";

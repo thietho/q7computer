@@ -1,4 +1,4 @@
-<script src='<?php echo HTTP_SERVER.DIR_JS?>ui.datepicker.js' type='text/javascript' language='javascript'> </script>
+
 <style>
 .text
 {
@@ -13,7 +13,7 @@
 <div>
 	<form id="frmRegister" method="post">
     	<div id="error" class="ben-error" style="display:none"></div>
-    	<table class="ben-form">
+    	<table class="ben-table">
         	<tr>
             	<td><label>Tên đăng nhập</label></td>
                 <td><?php echo @$member['username']?></td>
@@ -64,7 +64,7 @@ function editText(eid)
 	if(isedit)
 	{
 		var text = $("#"+eid).html();
-		var html = '<input type="text" class="ben-textbox" size="50" id="text-'+eid+'" value="'+text+'">';
+		var html = '<input type="text" class="ben-textbox" id="text-'+eid+'" value="'+text+'">';
 		html+=' <input id="btnSaveInfor" type="button" class="ben-button" value="Save" onclick="saveInfor(\''+eid+'\')">';
 		
 						

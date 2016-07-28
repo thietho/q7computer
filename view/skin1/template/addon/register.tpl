@@ -1,4 +1,3 @@
-<script src='<?php echo HTTP_SERVER.DIR_JS?>ui.datepicker.js' type='text/javascript' language='javascript'> </script>
 <div>
 	<h3>Đăng ký thành viên</h3>
     <div id="error" class="ben-error" style="display:none"></div>

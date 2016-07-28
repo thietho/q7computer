@@ -4,6 +4,10 @@
 
 <h2><?php echo @$sitemap['breadcrumb']?></h2>
 <div class="ben-post">
+	<h2>
+        <?php echo @$this->document->productName($post['mediaid'])?>
+    </h2>
+    <?php if(@$post['noted']!="") echo "<h4>".$post['noted']."</h4>";?>
 	<div class="ben-left product-left">
     	<?php if(in_array("sanphamhot",$properties)){ ?>
         <div id="ben-icon-hot-detail" class="ben-icon">
@@ -140,11 +144,8 @@ $("#ben-next").click(function(){
         </div>
      
     </div>
-    <div class="ben-right product-right">
-        <h2>
-        	<?php echo @$this->document->productName($post['mediaid'])?>
-        </h2>
-        <?php if(@$post['noted']!="") echo "<h4>".$post['noted']."</h4>";?>
+    <div>
+        
         
         <!--<a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo @$post['link']?>" target="_blank">
     		<img src="<?php echo HTTP_SERVER.DIR_IMAGE?>facebook.gif" />
@@ -206,10 +207,7 @@ $("#ben-next").click(function(){
             	
                 
             </p>
-            <p class="short_intro">
-            	<?php echo @$post['summary']?>
-                
-            </p>
+            
             <?php if(@count($data_samplecode)>1){ ?>
             <p>
             	<?php foreach($data_samplecode as $key => $item){?>
@@ -221,9 +219,9 @@ $("#ben-next").click(function(){
         
     </div>
     <div class="clearer">&nbsp;</div>
-
-    <div class="ben-hline"></div>
+    
     <p>
+    	<?php echo @$post['summary']?>
         <?php echo @$post['description']?>
     </p>
     

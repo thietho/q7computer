@@ -1,5 +1,5 @@
 <div>
-    <table class="ben-table">
+    <table>
 		<thead>
         	<tr>
                 <th>Mã đơn hàng</th>

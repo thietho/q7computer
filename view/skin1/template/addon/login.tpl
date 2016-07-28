@@ -18,7 +18,7 @@
                 <td></td>
                 <td>
                     <p>
-                        <input type="button" class="ben-button" id="btnLogin" value="Đăng nhập"> <a href="<?php echo @$this->document->createLink('register')?>">Đăng ký</a>
+                        <input type="button" class="ben-button" id="btnLogin" value="Đăng nhập"> <a href="<?php echo @$this->document->createLink('register')?>">Đăng ký</a> <a href="<?php echo @$this->document->createLink('forgotpassword')?>">Quên mật khẩu</a>
                     </p>
                     
                     <input type="checkbox" name="remember" value="1"> Ghi nhớ

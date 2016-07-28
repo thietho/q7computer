@@ -6,25 +6,25 @@ final class MailSMTP {
 	{
 		$mail = new PHPMailer();
 		$mail->IsSMTP(); // set mailer to use SMTP
-		/*$mail->Host = "smtp.gmail.com"; // specify main and backup server
+		$mail->Host = "smtp.gmail.com"; // specify main and backup server
 		$mail->Port = 465; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = 'ssl';
 		$mail->Username = "thietho1982@gmail.com"; // your SMTP username or your gmail username
-		$mail->Password = "Ho9501424"; // your SMTP password or your gmail password*/
+		$mail->Password = "VoDeThuong1706"; // your SMTP password or your gmail password
 		
-		$mail->Host = "mail.shoplovebaby.com"; // specify main and backup server
+		/*$mail->Host = "mail.mylanbeauty.net"; // specify main and backup server
 		$mail->Port = 587; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = '';
-		$mail->Username = "info@shoplovebaby.com"; // your SMTP username or your gmail username
-		$mail->Password = "ocEZZvo&F&,O";
+		$mail->Username = "info@mylanbeauty.net"; // your SMTP username or your gmail username
+		$mail->Password = "LanTran1981";*/
 		
-		$from = $data['from']; // Reply to this email
+		$from = "thietho1982@gmail.com"; // Reply to this email
 		@$arremail = split(',',$data['to']);
 		$to=$arremail[0]; // Recipients email ID
 		$name= $data['name']; // Recipient's name
-		$mail->From = $mail->Username;
+		$mail->From = $from;
 		$mail->FromName = $data['FromName']; // Name to indicate where the email came from when the recepient received
 		$mail->AddAddress($to,$name);
 		$mail->AddReplyTo($from,$data['FromName']);

@@ -24,6 +24,7 @@
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>jquery-1.8.2.min.js"></script>
     <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/jquery-ui.js'></script>
     <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/jquery.lazy.js'></script>
+    <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/jquery.blockUI.js'></script>
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>divbox.js"></script>
     <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>me.js"></script>
     <script type='text/javascript' src='<?php echo HTTP_SERVER.DIR_JS?>jquery.easing.1.3.js'></script> 

@@ -1,6 +1,7 @@
 <?php
 class ControllerPageDetail extends Controller
 {
+	private $breadcrumb = array();
 	function __construct() 
 	{
 		//$this->iscache = true;
@@ -8,6 +9,19 @@ class ControllerPageDetail extends Controller
 		foreach($_GET as $key => $val)
 			$arr[] = $key."=".$val;
 	 	$this->name ="Pagedetail_".implode("_",$arr);
+		$this->breadcrumb = array(
+								'login' => "Đăng nhập",
+								'register' => 'Đăng ký',
+								'cart' => 'Giỏ hàng',
+								'checkout' => 'Thanh toán',
+								'active' => 'Kích hoạt tài khoản',
+								'member' => 'Thông tin thành viên',
+								'memberinfor' => 'Cập nhật thông tin cá nhân',
+								'changepass' => 'Thay đổi mật khẩu',
+								'historyorder' => 'Lịch sử mua hàng',
+								'forgotpassword' => 'Quên mật khẩu'
+								);
+		
    	}
 	public function index()
 	{
@@ -29,6 +43,19 @@ class ControllerPageDetail extends Controller
 			@$id = $this->request->get['id'];
 			
 			$this->data['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($this->document->sitemapid, $siteid);
+			if($this->document->sitemapid == 'brand')
+			{
+				
+				$this->data['breadcrumb'].= "<a>".$this->document->getCategory($id)."</a>";
+			}
+			else
+			{
+				if(@$this->breadcrumb[$this->document->sitemapid]!='')
+				{
+					$this->data['breadcrumb'].= "<a>".$this->breadcrumb[$this->document->sitemapid]."</a>";
+				}
+			}
+			
 			$template = array(
 						  'template' => "module/category_brand.tpl"
 						  );
@@ -142,8 +169,8 @@ class ControllerPageDetail extends Controller
 						{
 							$template = array(
 										  'template' => "module/product_detail.tpl",
-										  'width' => 250,
-										  'height' =>250
+										  'width' => 530,
+										  'height' =>530
 										  );
 							$arr = array($this->document->sitemapid,12,$template);
 							$this->data['module'] = $this->loadModule('module/pagedetail','getFormProduct',$arr);
