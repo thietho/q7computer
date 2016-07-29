@@ -9,6 +9,16 @@ body {
 input {
 	outline:none;
 }
+#head_logo
+{
+	margin:55px 0 0 35px;
+	position:absolute;
+	z-index:1000;	
+}
+#head_logo img
+{
+	width:120px;	
+}
 .head_menu {
 	width: 100%;
 	height: 50px;

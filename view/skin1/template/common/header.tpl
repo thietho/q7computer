@@ -1,4 +1,5 @@
 <div class="head_top">
+	<div id="head_logo"><img src="<?php echo HTTP_SERVER.DIR_IMAGE.'logo.png'?>"></div>
   <div class="fix1000">
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>jquery.dropdown.css" type="text/css" rel="stylesheet">
     <div class='ontop' style="float:right; padding:10px;">
