@@ -30,21 +30,12 @@ class ControllerCommonTygia extends Controller
 	{
 		$data=array();
 		$index=0;
-		try
+		
+		for($i = 0; $i<count($objxml->Exrate) ;$i++)
 		{
-			foreach($objxml->children() as $child)
-			{
-				foreach( $child->attributes() as $key => $item)
-				{
-					$data[$index][$key]= $item;
-				}
-				$index++;
-			}
+			$data[$i]= $objxml->Exrate[$i];
 		}
-		catch (Exception $e) 
-		{
-			
-		}
+		
 		return $data;
 	}
 	function searchTigia($ar,$att,$value)

@@ -141,8 +141,8 @@ class ControllerPageHome extends Controller
 						  );
 		$arr = array("bai-viet-hay",0,"",$template);
 		$this->data['leftsitebar']['bai-viet-hay'] = '<div class="head_title"><span>BÀI VIẾT HAY</span></div>'.$this->loadModule('module/pagelist','getList',$arr);
-		$this->data['leftsitebar']['exchange'] = '<div class="clear" style="height:10px;"></div>
-                                    <div class="head_title"><span>TỶ GIÁ</span></div>'.$this->loadModule("common/tygia");
+		/*$this->data['leftsitebar']['exchange'] = '<div class="clear" style="height:10px;"></div>
+                                    <div class="head_title"><span>TỶ GIÁ</span></div>'.$this->loadModule("common/tygia");*/
 		/*$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);

@@ -5,22 +5,22 @@ final class MailSMTP {
 	public function sendMail($data)
 	{
 		$mail = new PHPMailer();
-		$mail->IsSMTP(); // set mailer to use SMTP
+		/*$mail->IsSMTP(); // set mailer to use SMTP
 		$mail->Host = "smtp.gmail.com"; // specify main and backup server
 		$mail->Port = 465; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = 'ssl';
 		$mail->Username = "thietho1982@gmail.com"; // your SMTP username or your gmail username
-		$mail->Password = "VoDeThuong1706"; // your SMTP password or your gmail password
+		$mail->Password = "VoDeThuong1706"; // your SMTP password or your gmail password*/
 		
-		/*$mail->Host = "mail.mylanbeauty.net"; // specify main and backup server
-		$mail->Port = 587; // set the port to use
+		$mail->Host = "mail.q7computer.vn"; // specify main and backup server
+		$mail->Port = 25; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = '';
-		$mail->Username = "info@mylanbeauty.net"; // your SMTP username or your gmail username
-		$mail->Password = "LanTran1981";*/
+		$mail->Username = "info@q7computer.vn"; // your SMTP username or your gmail username
+		$mail->Password = "Q7Computer";
 		
-		$from = "thietho1982@gmail.com"; // Reply to this email
+		$from = "info@q7computer.vn"; // Reply to this email
 		@$arremail = split(',',$data['to']);
 		$to=$arremail[0]; // Recipients email ID
 		$name= $data['name']; // Recipient's name

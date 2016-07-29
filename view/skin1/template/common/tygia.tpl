@@ -74,8 +74,8 @@ $(document).ready(function() {
     ?>
     <tr>
       <td style="font-weight: bold;text-align: left;width:45%;"><?php echo @$item['CurrencyCode']?></td>
-      <td style="padding-right: 12px;"><?php echo @$this->string->numberFormate((double)$item['Buy'],2)?></td>
-      <td style="padding-right: 12px;" ><?php echo @$this->string->numberFormate((double)$item['Sell'],2)?></td>
+      <td class="number" style="padding-right: 12px;"><?php echo @$this->string->numberFormate((double)$item['Buy'],2)?></td>
+      <td class="number" style="padding-right: 12px;" ><?php echo @$this->string->numberFormate((double)$item['Sell'],2)?></td>
     </tr>
     <?php } ?>
     
