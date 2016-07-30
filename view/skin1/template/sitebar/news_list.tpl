@@ -1,5 +1,5 @@
 <div class="boxstyle">
-  
+  <marquee id="marqueelup2" onmouseover="marqueelup2.stop()" onmouseout="marqueelup2.start()" scrollamount="2" scrolldelay="100" direction="up" width="100%" height="180" style="width: 100%; height: 180px;">
   <?php foreach($medias as $media) {?>
   <table width='100%' border=0 style='border-collapse:collapse'>
     <tr>
@@ -15,6 +15,7 @@
     </tr>
   </table>
   <?php } ?>
+  </marquee>
   <div class="clear" style="height:0px;"></div>
 </div>
 <div class="clear" style="height:10px;"></div>

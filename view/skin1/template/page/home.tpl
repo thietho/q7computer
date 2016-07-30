@@ -20,12 +20,6 @@
 <?php echo $sanphammoi?>
 <div class="clear" style="height:8px;"></div>
 
-<div class="head_title_center_home">BÀI VIẾT MỚI</div>
-<?php echo $baivietmoi?>
-<div class="clear" style="height:8px;"></div>
-
-<div class="head_title_center_home">BÀI VIẾT NỔI BẬT</div>
-<?php echo $baivietnoibat?>
           </div>
           <div class="site_content_right" >
 

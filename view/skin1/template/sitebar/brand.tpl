@@ -3,7 +3,7 @@
             <div id="right-menu-right">
                 <ul id="right-menu-panel">
                 	<?php foreach($data_brand as $item){ ?>
-                  	<li><a href="<?php echo @$this->document->createLink('brand', $item['categoryid'])?>" class='menuicon'><img src='http://demo154com935.web30s.vn/images/icons/application.png' width='16' height='16' class='img_icon'/> <?php echo $item['categoryname']?></a></li>
+                  	<li><a href="<?php echo @$this->document->createLink('brand', $item['categoryid'])?>" class='menuicon'><?php echo $item['categoryname']?></a></li>
                     <?php } ?>
                 	  
             	</ul>

@@ -298,23 +298,22 @@ a.catalog, a.catalog:link, a.catalog:visited {
 	list-style: none;
 }
 #right-menu-right ul li {
-	padding: 0;
-	margin: 0;
-}
-#right-menu-right ul li a {
-	text-indent: -9999px;
-	text-decoration: none;
+	
 	position: relative;
-	color:#805b3e;
+	width: 193px;
 	font-weight:bolder;
 	float:left;
 	margin-top:1px;
 	margin-bottom:0px;
-	padding-left:20px;
-	border-top:1px dotted #ccc;
+	
+	
+}
+#right-menu-right ul li a {
+	color:#805b3e;
+	text-indent: -9999px;
+	text-decoration: none;
 }
 #right-menu-right ul li a:hover {
-	background-color:#ccc;
 	color:#FFF;
 }
 #right-menu-right ul li a.active { /*--Active state when subpanel is open--*/
@@ -325,11 +324,15 @@ a.catalog, a.catalog:link, a.catalog:visited {
 }
 #right-menu-right a.menuicon {
 	display:block;
-	width: 193px;
+	
 	height:20px;
 	text-indent: 0; /*--Reset text indent--*/
-	padding-top:3px;
-	padding-bottom:3px;
+	padding-top:5px;
+	padding-bottom:2px;
+}
+#right-menu-panel ul
+{
+	padding-left:10px;	
 }
 /*En Menu Bar*/
 #div-line-xanh {
@@ -463,7 +466,7 @@ a.afooter, a.afooter:link, a.afooter:visited {
 }
 .boxstyle {
 	background-color: #ddd;
-	padding:5px;
+	padding:5px 5px 5px 20px;
 	/*
 	border-radius: 7px;
 	-moz-border-radius: 7px;

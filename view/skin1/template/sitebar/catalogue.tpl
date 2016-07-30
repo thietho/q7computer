@@ -1,24 +1,27 @@
-<script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/menu-collapsed.js'></script>
-                    <div class="ben-section">
-                    	
-                        <div class="ben-section-content">
-                        	<ul id="menu">
-                            	<li>
-                                	<div class="collape">
-                                    	<a href="<?php echo @$this->document->createLink('minisize')?>" title="Hàng size nhỏ (Mini size)">Chuyên Hàng size nhỏ</a><div class="clearer">^&nbsp;</div>
-                                    </div>
-                                </li>
-                                <?php echo @$menu?>
-                            </ul>
-                        </div>
-                    </div>
+<div class="head_title"><span>Danh mục</span></div>
+<div class="boxstyle">
+            <div id="right-menu-right">
+                <ul id="right-menu-panel">
+                	<?php echo @$menu?>
+                	  
+            	</ul>
+            <div id="div-line-xanh"></div>
+            </div>            
+		</div>
+        <div class="clear" style="height:10px;"></div>
 <script language="javascript">
-$(document).ready(function(){
+
+function menupanel(){
+$(" #right-menu-panel ul").css({display: "none"}); // Opera Fix
+$(" #right-menu-panel li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).show();
+		},function(){
+			$(this).find('ul:first').css({display: "none"});
+		});
+}
+
+$(document).ready(function(){					
+	menupanel();
 	
-	$('.deep2').hide('fast',function(){
-	<?php foreach($path as $item){ ?>
-	$("#<?php echo @$item['sitemapid']?>").show();
-	<?php } ?>	
-	});
 });
 </script>

@@ -50,4 +50,7 @@ function initialize(x,y,zoom)
 	initialize(x,y,zoom);
 	
 </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDREKHzZPitTnAFDGz-Rpfj1wYP75-KOLU&callback=initMap">
+    </script>
  
