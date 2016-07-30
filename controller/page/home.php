@@ -107,6 +107,8 @@ class ControllerPageHome extends Controller
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['brand'] = $this->loadModule('sitebar/brand');
+		$arr = array('doi-tac');
+		$this->data['leftsitebar']['weblink'] = '<div class="head_title"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
 		/*$this->data['leftsitebar']['exchange'] = '<div class="clear" style="height:10px;"></div>
                                     <div class="head_title"><span>TỶ GIÁ</span></div>'.$this->loadModule("common/tygia");*/
 		/*$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
@@ -144,8 +146,8 @@ class ControllerPageHome extends Controller
 		$arr = array("tin-tuc-hot",0,"",$template);
 		$this->data['rightsitebar']['tin-tuc-hot'] = '<div class="head_title_right"><span>TIN TỨC HOT</span></div>'.$this->loadModule('module/pagelist','getList',$arr);
 		
-		$arr = array('doi-tac');
-		$this->data['rightsitebar']['weblink'] = '<div class="head_title_right"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
+		
+		
 		
 		/*$this->data['rightsitebar']['login'] = $this->loadModule('sitebar/login');
 		$this->data['rightsitebar']['search'] = $this->loadModule('sitebar/search');

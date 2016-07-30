@@ -291,6 +291,7 @@ a.catalog, a.catalog:link, a.catalog:visited {
  top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
 }
 #right-menu-right #right-menu-panel {
+	padding-left:15px;
 }
 #right-menu-right ul {
 	padding:0px;
@@ -466,7 +467,7 @@ a.afooter, a.afooter:link, a.afooter:visited {
 }
 .boxstyle {
 	background-color: #ddd;
-	padding:5px 5px 5px 20px;
+	padding:5px;
 	/*
 	border-radius: 7px;
 	-moz-border-radius: 7px;
