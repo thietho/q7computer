@@ -21,8 +21,8 @@ class ControllerPageDetail extends Controller
 								'changepass' => 'Thay đổi mật khẩu',
 								'historyorder' => 'Lịch sử mua hàng',
 								'forgotpassword' => 'Quên mật khẩu',
-								'activelink' => 'Kích hoạt tài khoản'
-								
+								'activelink' => 'Kích hoạt tài khoản',
+								'product' => 'Tìm kiếm sản phẩm'
 								);
 		
    	}
@@ -219,7 +219,7 @@ class ControllerPageDetail extends Controller
 	private function loadSiteBar()
 	{
 		//Left sitebar
-		
+		$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['brand'] = $this->loadModule('sitebar/brand');
@@ -227,7 +227,7 @@ class ControllerPageDetail extends Controller
 		$this->data['leftsitebar']['weblink'] = '<div class="head_title"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
 		/*$this->data['leftsitebar']['exchange'] = '<div class="clear" style="height:10px;"></div>
                                     <div class="head_title"><span>TỶ GIÁ</span></div>'.$this->loadModule("common/tygia");*/
-		/*$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
+		/*
 		
 		$this->data['leftsitebar']['cart'] = $this->loadModule('sitebar/cart');
 		$this->data['leftsitebar']['gallery'] = $this->loadModule('sitebar/gallery');*/

@@ -103,8 +103,8 @@ class ControllerAddonProduct extends Controller
 		
 		$template = array(
 							  'template' => "module/product_list.tpl",
-							  'width' => 170,
-							  'height' =>170,
+							  'width' => IMG_PROLIST,
+							  'height' =>IMG_PROLIST,
 							  'widthpreview' => 450,
 						  	  'heightpreview' =>450
 							  );

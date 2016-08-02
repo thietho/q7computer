@@ -18,7 +18,11 @@ function initMap() {
 	  map: map,
 	  draggable: true,
 	  animation: google.maps.Animation.DROP,
-	  position: {lat: x, lng: y}
+	  position: {lat: x, lng: y},
+	  'position_changed':function(){
+		  $('#x').val(marker.position.lat);
+		  $('#y').val(marker.position.lng);
+	  }
 	});
 	//marker.addListener('click', toggleBounce);
 	
@@ -79,8 +83,8 @@ function toggleBounce() {
                     
                 <p>
                     <label>Point</label>
-                    X:<input type="text" name="x" value="<?php echo @$location['x']?>"  class="text"/> Y:<input type="text" name="y" value="<?php echo @$location['y']?>"  class="text" onchange="loadPosition()"/>
-                    <input type="hidden" name="pointid" value="<?php echo @$location['pointid']?>" onchange="loadPosition()"/>
+                    X:<input type="text" id="x" name="x" value="<?php echo @$location['x']?>"  class="text"/> Y:<input type="text" id="y" name="y" value="<?php echo @$location['y']?>"  class="text"/>
+                    <input type="hidden" name="pointid" value="<?php echo @$location['pointid']?>" onchange=""/>
                     
                     <input type="hidden" name="position" value="<?php echo @$location['position']?>"  />
                     <div id="listpath">

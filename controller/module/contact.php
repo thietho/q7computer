@@ -9,7 +9,7 @@ class ControllerModuleContact extends Controller
 		$siteid = $this->user->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		//$this->data['sitemap']['breadcrumb'] = $this->model_core_sitemap->getBreadcrumb($sitemapid, $siteid);
-		$this->document->breadcrumb = $this->data['sitemap']['breadcrumb'];
+		
 		$this->data['post'] = $this->model_core_media->getItem($this->member->getSiteId().$sitemapid);
 		
 		if(count($this->data['post']) == 0)
@@ -18,7 +18,7 @@ class ControllerModuleContact extends Controller
 		}
 		
 		$this->data['post']['description'] = html_entity_decode($this->data['post']['description']);
-		$this->document->title .= " - ".$this->data['post']['title'];
+		@$this->document->title .= " - ".$this->data['post']['title'];
 		$arr = array("sododuongdi");
 						
 		$this->data['sododuongdi'] = $this->loadModule('module/location','loadLocation',$arr);

@@ -41,6 +41,7 @@ class ControllerPageHome extends Controller
 			$this->data['bannerhome'] = $this->loadModule('module/block','getList',$arr);
 			
 			$list_mediaid = json_decode($this->document->setup['sanphamkhuyenmai']);
+			
 			$medias = array();
 			foreach($list_mediaid as $mediaid)
 			{
@@ -103,7 +104,7 @@ class ControllerPageHome extends Controller
 	private function loadSiteBar()
 	{
 		//Left sitebar
-		
+		$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['brand'] = $this->loadModule('sitebar/brand');
@@ -111,9 +112,9 @@ class ControllerPageHome extends Controller
 		$this->data['leftsitebar']['weblink'] = '<div class="head_title"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
 		/*$this->data['leftsitebar']['exchange'] = '<div class="clear" style="height:10px;"></div>
                                     <div class="head_title"><span>TỶ GIÁ</span></div>'.$this->loadModule("common/tygia");*/
-		/*$this->data['leftsitebar']['searchproduct'] = $this->loadModule('sitebar/searchproduct');
 		
-		$this->data['leftsitebar']['cart'] = $this->loadModule('sitebar/cart');
+		
+		/*s$this->data['leftsitebar']['cart'] = $this->loadModule('sitebar/cart');
 		$this->data['leftsitebar']['gallery'] = $this->loadModule('sitebar/gallery');*/
 		//$this->data['leftsitebar']['faq'] = $this->loadModule('sitebar/faq');
 		

@@ -167,7 +167,9 @@ class ControllerModuleProductlist extends Controller
 		$this->load->model("core/sitemap");
 		$this->load->model("core/category");
 		$this->load->helper('image');
-		
+		$this->data['sanphamkhuyenmai'] = json_decode($this->document->setup['sanphamkhuyenmai']);
+		$this->data['sanphammoi'] = json_decode($this->document->setup['sanphammoi']);
+		$this->data['sanphamhot'] = json_decode($this->document->setup['sanphamhot']);
 		$this->data['statuspro'] = array();
 		$this->model_core_category->getTree("status",$this->data['statuspro']);
 		unset($this->data['statuspro'][0]);

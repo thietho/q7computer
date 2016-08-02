@@ -24,19 +24,7 @@
       <ul>
         <?php echo $mainmenu?>
       </ul>
-      <div class="cong" style="display:block;">
-        <form class="nomargin" action="http://web30s.vn/catalog-all/" method="get" style="margin:0;" OnSubmit="GoSearch(); return false;" name="formsearch">
-          <input name="search" onfocus="if (this.value == 'sản phẩm cần tìm'){this.value='';}" onblur="if (this.value == '') {this.value='sản phẩm cần tìm';}" value="sản phẩm cần tìm" id="txSearchCondition">
-          <input type="submit" id="btnSearch" class="submitbutton" value="Tìm kiếm">
-        </form>
-        <script type="text/javascript">
-                function GoSearch()
-                    {
-                        var searchkey = document.getElementById('txSearchCondition').value;
-                        window.open('http://demo154com935.web30s.vn/products-all/keysearch:'+searchkey,'_self');
-                    }
-          </script> 
-      </div>
+      
       <div class="clear"></div>
     </div>
   </div>

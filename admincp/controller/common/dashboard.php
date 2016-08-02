@@ -8,7 +8,7 @@ class ControllerCommonDashboard extends Controller
 										'sanphamhot' => 'Sản phẩm hot',
 										'sanphamkhuyenmai' => 'Sản phẩm khuyến mãi',
 										'sanphammoi' => 'Sản phẩm mới',
-										'sanphamdatbiet' => 'Sản phẩm đặt biệt',
+										
 										);
 	}
 	function index()

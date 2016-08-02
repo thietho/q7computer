@@ -1,4 +1,5 @@
 <?php
+
 if(@count($medias))
 {
 ?>
@@ -12,6 +13,15 @@ if(@count($medias))
         <?php if($media['discountpercent']>0){ ?>
         <div class="flagdiscount"><?php echo $media['discountpercent']?>%</div>
         <?php } ?>
+        <?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
+        <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-sale.png"></div>
+        <?php }?>
+        <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
+        <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-new.png"></div>
+        <?php }?>
+        <?php if( in_array($media['mediaid'],$sanphamhot)){ ?>
+        <div class="icon-status icon-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-hot.png"></div>
+        <?php }?>
         <div align='center' style='padding:3px;'><a href="<?php echo @$media['link']?>" class='color_2'><img data-src="<?php echo @$media['imagethumbnail']?>" class="lazy loading"/></a>
             <div class='clear' style='height:1px;'></div>
             <div style='height:50px;overflow:hidden;'>

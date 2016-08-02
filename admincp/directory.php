@@ -1,7 +1,7 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:81/q7computer/admincp/');
-define('HTTP_IMAGE', 'http://localhost:81/q7computer/file/');
+define('HTTP_SERVER', 'http://'.$_SERVER['HTTP_HOST'].'/q7computer/admincp/');
+define('HTTP_IMAGE', 'http://'.$_SERVER['HTTP_HOST'].'/q7computer/file/');
 
 // HTTPS
 define('HTTPS_SERVER', '');

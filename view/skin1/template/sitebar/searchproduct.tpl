@@ -1,6 +1,6 @@
-<div class="ben-section">
-    <form id="ben-searchform" class="ben-section-content" action="<?php echo @$this->document->createLink('product')?>">
-    	<div class="ben-section-title">Tìm kiếm sản phẩm</div>
+<div class="head_title"><span>Tìm kiếm sản phẩm</span></div>
+<div class="boxstyle">
+   	<form id="ben-searchform" class="ben-section-content" action="<?php echo @$this->document->createLink('product')?>">
         <p>
             <select name="loaisp" id="loaisp">
                 <option value="">Loại sản phẩm</option>
@@ -9,14 +9,7 @@
                 <?php } ?>
             </select>
         </p>
-        <!--<p>
-            <select name="nhomhuong" id="nhomhuong">
-                <option value="">Nhóm hương</option>
-                <?php foreach($nhomhuong as $it){ ?>
-                <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>                        
-                <?php } ?>
-            </select>
-        </p>-->
+        
         <p>
             <select name="nhanhieu" id="nhanhieu">
                 <option value="">Nhãn hiệu</option>
@@ -32,7 +25,7 @@
         </p>
         <p>
             <select name="status" id="status">
-                <option value="">Các vấn đề</option>
+                <option value="">Nhu cầu</option>
                 <?php foreach($status as $it){ ?>
                 <option value="<?php echo @$it['categoryid']?>"><?php echo @$it['categoryname']?></option>                        
                 <?php } ?>
@@ -41,7 +34,9 @@
     	<input type="text" class="ben-textbox" id="keyword" name="keyword" >
         <input type="submit" class="ben-button" id="btnSearch" value="Tìm">
     </form>
+    
 </div>
+
 <script language="javascript">
 $(document).ready(function(e) {
     $('#ben-searchform #nhanhieu').change();
