@@ -1,10 +1,21 @@
 <div class="head_title_right"><span>HỖ TRỢ TRỰC TUYẾN</span></div>
 <div id="supportonline" class="boxstyle_right">
 	<div>
-        <a rel="nofollow" href="ymsgr:sendIM?amthanh_3000_tr">
-          <img width="64" height="16" src="http://opi.yahoo.com/online?u=amthanh_3000_tr&amp;m=g&amp;t=1&amp;l=us">
-        </a>
-        <a href="skype:0934105799?chat"><img src="<?php echo HTTP_SERVER.DIR_IMAGE.'icon-skype.jpg' ?>"></a>
+    	<table>
+        	<tr>
+            	<td>
+                	<a title="" href="ymsgr:SendIM?amthanh_3000_tr">
+                        <img border="0" src="http://mail.opi.yahoo.com/online?u=amthanh_3000_tr&amp;m=g&amp;t=2" width="101" height="21">
+                    </a>
+                </td>
+                <td>
+                	<a href="skype:0934105799?chat"><img src="<?php echo HTTP_SERVER.DIR_IMAGE.'skype.png' ?>"></a>
+                </td>
+            </tr>
+        </table>
+    	
+        
+        
         <a href="https://www.facebook.com/q7computer/" target="_blank"><img src="<?php echo HTTP_SERVER.DIR_IMAGE.'icon-facebook.png' ?>"></a>
         <img src="<?php echo HTTP_SERVER.DIR_IMAGE.'icon-viber.png' ?>">
         <img src="<?php echo HTTP_SERVER.DIR_IMAGE.'icon-zalo.png' ?>">

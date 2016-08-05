@@ -29,7 +29,7 @@
             });
         </script>
         <div style="height:200px; width:970px;" class="banner_top_ten">
-            <div class="camera_wrap camera_azure_skin" id="camera_wrap" style="width:970px;height:300px;">
+            <div class="camera_wrap camera_azure_skin" id="camera_wrap" style="width:970px;height:200px;">
                 <?php foreach($medias as $media) {?>
                 <div data-thumb="<?php echo @$media['imagethumbnail']?>" data-src="<?php echo @$media['imagethumbnail']?>">
                 	<div class='camera_caption fadeFromBottom'></div>
