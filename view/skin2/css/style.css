@@ -1,9 +1,9 @@
-html{ background:#279a71 url('images/body.jpg') repeat-y top  center;}
+html{ }
 body {
 	margin: 0px;
 	padding: 0;
 	color: #000;
-	background:url('images/background.jpg') no-repeat top center #01511C;
+	background:url('images/background.jpg') no-repeat top center #012641;
 	font-size: 11px;
 }
 input {
