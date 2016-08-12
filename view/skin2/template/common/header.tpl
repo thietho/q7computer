@@ -19,7 +19,7 @@
 </div>
 <div class="head_banner" style="margin-top:0px; margin-bottom:0px;">
 	<div class="fix980" align="center">
-    	<embed width="970px" height="200px" name="plugin" src="<?php echo HTTP_SERVER.DIR_IMAGE?>Q7_top_970x200px.swf" type="application/x-shockwave-flash">
+    	<?php echo $headerimage?>
 	</div>
 </div>
 

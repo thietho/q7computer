@@ -5,7 +5,7 @@ if(@count($medias))
 <div class="boxstyle">
 	<?php foreach($medias as $media){ ?> 
     	<?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
-        <div class="icon-status sitebar-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-sale.png"></div>
+        <div class="icon-status sitebar-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\for-sale.gif" width="90px"></div>
         <?php }?>
         <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
         <div class="icon-status sitebar-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-new.png"></div>

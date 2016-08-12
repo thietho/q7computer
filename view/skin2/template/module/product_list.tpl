@@ -14,7 +14,7 @@ if(@count($medias))
         <div class="flagdiscount"><?php echo $media['discountpercent']?>%</div>
         <?php } ?>
         <?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
-        <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-sale.png"></div>
+        <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\for-sale.gif" width="90px"></div>
         <?php }?>
         <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
         <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-new.png"></div>
@@ -24,7 +24,7 @@ if(@count($medias))
         <?php }?>
         <div align='center' style='padding:3px;'><a href="<?php echo @$media['link']?>" class='color_2'><img data-src="<?php echo @$media['imagethumbnail']?>" class="lazy loading"/></a>
             <div class='clear' style='height:1px;'></div>
-            <div style='height:50px;overflow:hidden;'>
+            <div>
             <?php if($media['discountpercent']==0){ ?>
               <div class='clear maudo' align='center'><strong><?php echo @$this->string->numberFormate($media['price'])?><?php echo @$this->document->setup['Currency']?></strong></div>
               

@@ -3,6 +3,20 @@ class ControllerCommonHeader extends Controller
 {
 	public function index()
 	{
+		require_once DIR_COMPONENT.'MobileDetect/Mobile_Detect.php';
+		$detect = new Mobile_Detect;
+		$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+		$scriptVersion = $detect->getScriptVersion();
+		switch($deviceType) 
+		{
+			case 'phone':	
+			case 'tablet':
+				$this->data['headerimage'] = '<img src="'.HTTP_SERVER.DIR_IMAGE.'header.png">';
+				break;
+			default:
+				$this->data['headerimage'] = '<embed width="970px" height="200px" name="plugin" src="'.HTTP_SERVER.DIR_IMAGE.'Q7_top_970x200px.swf" type="application/x-shockwave-flash">';
+				
+		}
 		$sitemapid = "hotroonline";
 		$siteid = $this->member->getSiteId();
 		$this->load->model("core/media");
@@ -12,7 +26,7 @@ class ControllerCommonHeader extends Controller
 		@$this->data['supportonline'] = html_entity_decode($this->data['media']['description']);
 		$this->data['mainmenu'] = $this->getMenu("");
 		
-		//Banner header
+		/*//Banner header
 		$template = array(
 					  'template' => "common/bannerheader.tpl",
 					  'width' => 980,
@@ -20,7 +34,7 @@ class ControllerCommonHeader extends Controller
 					  );
 	
 		$arr = array("banner",0,"",$template);
-		$this->data['banner'] = $this->loadModule('module/block','getList',$arr);
+		$this->data['banner'] = $this->loadModule('module/block','getList',$arr);*/
 		$this->id="header";
 		$this->template="common/header.tpl";
 		$this->render();
