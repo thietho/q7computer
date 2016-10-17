@@ -1,4 +1,4 @@
-<div class="head_title"><span>Danh mục</span></div>
+<div class="head_title"><span>Danh mục sản phẩm</span></div>
 <div class="boxstyle">
             <div id="right-menu-right">
                 <ul id="right-menu-panel">

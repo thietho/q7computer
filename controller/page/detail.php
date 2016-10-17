@@ -223,8 +223,15 @@ class ControllerPageDetail extends Controller
 		$arr = array('sanpham');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['brand'] = $this->loadModule('sitebar/brand');
-		$arr = array('doi-tac');
-		$this->data['leftsitebar']['weblink'] = '<div class="head_title"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
+        $template = array(
+            'template' => "sitebar/news_list.tpl",
+            'width' => 55,
+            'height' =>0
+        );
+        $arr = array("tin-tuc-hot",0,"",$template);
+        $this->data['rightsitebar']['tin-tuc-hot'] = '<div class="head_title_right"><span>TIN TỨC HOT</span></div>'.$this->loadModule('module/pagelist','getList',$arr);
+		//$arr = array('doi-tac');
+		//$this->data['leftsitebar']['weblink'] = '<div class="head_title"><span>ĐỐI TÁC</span></div>'.$this->loadModule('sitebar/weblink','index',$arr);
 		/*$this->data['leftsitebar']['exchange'] = '<div class="clear" style="height:10px;"></div>
                                     <div class="head_title"><span>TỶ GIÁ</span></div>'.$this->loadModule("common/tygia");*/
 		/*
@@ -254,13 +261,7 @@ class ControllerPageDetail extends Controller
 						  );
 		$arr = array("",0,"",$template,$medias);
 		$this->data['rightsitebar']['sanphamhot'] = '<div class="head_title_right"><span>SẢN PHẨM HOT</span></div>'.$this->loadModule('module/productlist','getAll',$arr);
-		$template = array(
-						  'template' => "sitebar/news_list.tpl",
-						  'width' => 55,
-						  'height' =>0
-						  );
-		$arr = array("tin-tuc-hot",0,"",$template);
-		$this->data['rightsitebar']['tin-tuc-hot'] = '<div class="head_title_right"><span>TIN TỨC HOT</span></div>'.$this->loadModule('module/pagelist','getList',$arr);
+
 		
 		
 		
