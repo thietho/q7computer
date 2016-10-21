@@ -10,7 +10,7 @@
 		</div>
         <div class="clear" style="height:10px;"></div>
 <script language="javascript">
-
+/*
 function menupanel(){
 $(" #right-menu-panel ul").css({display: "none"}); // Opera Fix
 $(" #right-menu-panel li").hover(function(){
@@ -23,5 +23,5 @@ $(" #right-menu-panel li").hover(function(){
 $(document).ready(function(){					
 	menupanel();
 	
-});
+});*/
 </script>

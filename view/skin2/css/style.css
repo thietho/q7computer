@@ -297,7 +297,7 @@ a.catalog, a.catalog:link, a.catalog:visited {
  top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
 }
 #right-menu-right #right-menu-panel {
-	padding-left:15px;
+	padding-left:8px;
 }
 #right-menu-right ul {
 	padding:0px;
@@ -337,10 +337,10 @@ a.catalog, a.catalog:link, a.catalog:visited {
 	padding-top:5px;
 	padding-bottom:2px;
 }
-#right-menu-panel ul
+#right-menu-panel ul li a
 {
-	margin-left:185px;
-	position:absolute;
+	margin-left:20px;
+
 	background:#ddd;
 	z-index:1000;
 	
