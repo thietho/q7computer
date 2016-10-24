@@ -316,7 +316,7 @@ a.catalog, a.catalog:link, a.catalog:visited {
 	
 }
 #right-menu-right ul li a {
-	color:#805b3e;
+	color:#000;
 	text-indent: -9999px;
 	text-decoration: none;
 }
@@ -328,6 +328,11 @@ a.catalog, a.catalog:link, a.catalog:visited {
 	border-top: none;
 	z-index: 200; /*--Keeps the active area on top of the subpanel--*/
 	position: relative;
+}
+#right-menu-right ul li ul li a {
+    color:#805b3e;
+    text-indent: -9999px;
+    text-decoration: none;
 }
 #right-menu-right a.menuicon {
 	display:block;
