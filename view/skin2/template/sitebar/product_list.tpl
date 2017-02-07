@@ -8,14 +8,14 @@ if(@count($medias))
         <div class="icon-status sitebar-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\for-sale.gif" width="90px"></div>
         <?php }?>
         <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
-        <div class="icon-status sitebar-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-new.png"></div>
+        <div class="icon-status sitebar-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-new.gif"></div>
         <?php }?>
         <?php if( in_array($media['mediaid'],$sanphamhot)){ ?>
-        <div class="icon-status sitebar-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-hot.png"></div>
+        <div class="icon-status sitebar-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-hot.gif"></div>
         <?php }?>
     <div style='border-bottom:1px dotted #CCCCCC; margin:10px;' align='center'>
     	<?php if($media['discountpercent']>0){ ?>
-        	<div class="flagdiscountsitebar"><?php echo $media['discountpercent']?>%</div>
+        	<div class="flagdiscountsitebar"><?php echo $this->string->numberFormate($media['discountpercent'])?>%</div>
         <?php } ?>
         <a href="<?php echo @$media['link']?>">
         	<img alt='<?php echo @$this->document->productName($media)?>' data-src="<?php echo $media['imagethumbnail']?>" width='120' height='auto' class='img_3 lazy'></a>

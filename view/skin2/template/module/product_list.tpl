@@ -7,20 +7,20 @@ if(@count($medias))
   <div class='clus'>
     <table width='100%' cellpadding='5'>
     <?php $i=0?>
-    <?php foreach($medias as $media) {?>
+    <?php foreach($medias as $media) { ?>
     	<?php if($i==0) echo "<tr>";?>
     	<td width='33%' class='row_nam'>
         <?php if($media['discountpercent']>0){ ?>
-        <div class="flagdiscount"><?php echo $media['discountpercent']?>%</div>
+        <div class="flagdiscount"><?php echo $this->string->numberFormate($media['discountpercent'])?>%</div>
         <?php } ?>
         <?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
-        <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\for-sale.gif" width="90px"></div>
+        <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/for-sale.gif" width="90px"></div>
         <?php }?>
         <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
-        <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-new.png"></div>
+        <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-new.gif"></div>
         <?php }?>
         <?php if( in_array($media['mediaid'],$sanphamhot)){ ?>
-        <div class="icon-status icon-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon\ico-hot.png"></div>
+        <div class="icon-status icon-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-hot.gif"></div>
         <?php }?>
         <div align='center' style='padding:3px;'><a href="<?php echo @$media['link']?>" class='color_2'><img data-src="<?php echo @$media['imagethumbnail']?>" class="lazy loading"/></a>
             <div class='clear' style='height:1px;'></div>
