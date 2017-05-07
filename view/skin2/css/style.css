@@ -406,7 +406,7 @@ a.afooter, a.afooter:link, a.afooter:visited {
 	/* Standard syntax */
 	background: linear-gradient(to right, #032c63,#03618e,#032c63); 
 	line-height: 24px;
-	padding:20px 38px;
+	padding:20px 38px 10px;
 	color:#6abdf2;
 	font-size:1.2em;
 }
@@ -415,7 +415,7 @@ a.afooter, a.afooter:link, a.afooter:visited {
 	position:absolute;
 	text-align:center;
 	margin-left:617px;
-	margin-top:56px;
+	margin-top:65px;
 	font-style:italic;
 	color:#6abdf2;
 }
@@ -426,7 +426,7 @@ a.afooter, a.afooter:link, a.afooter:visited {
 #footer-logo
 {
 	position:absolute;
-	margin:25px 0 25px 835px;
+	margin:32px 0 0px 835px;
 }
 .company
 {
