@@ -35,46 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin2/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7010" max-vertical-offset="15725">
-              <caret line="417" column="17" selection-start-line="417" selection-start-column="17" selection-end-line="417" selection-end-column="17" />
-              <folding>
-                <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/document.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.115385" vertical-offset="4770" max-vertical-offset="7854">
-              <caret line="293" column="30" selection-start-line="293" selection-start-column="20" selection-end-line="293" selection-end-column="30" />
-              <folding>
-                <marker date="1469113618491" expanded="true" signature="2555:2644" placeholder="Select `medi..." />
-                <marker date="1469113618491" expanded="true" signature="3589:3703" placeholder="Select `site..." />
-                <marker date="1469113618491" expanded="true" signature="3838:3929" placeholder="Select `cate..." />
-                <marker date="1469113618491" expanded="true" signature="4052:4131" placeholder="Select `medi..." />
-                <marker date="1469113618491" expanded="true" signature="4273:4354" placeholder="Select `medi..." />
-                <marker date="1469113618491" expanded="true" signature="4814:4895" placeholder="Select `qlkn..." />
-                <marker date="1469113618491" expanded="true" signature="5049:5140" placeholder="Select `user..." />
-                <marker date="1469113618491" expanded="true" signature="5280:5355" placeholder="Select `user..." />
-                <marker date="1469113618491" expanded="true" signature="5493:5560" placeholder="Select `user..." />
-                <marker date="1469113618491" expanded="true" signature="5717:5788" placeholder="Select `modu..." />
-                <marker date="1469113618491" expanded="true" signature="5920:6003" placeholder="Select `modu..." />
-                <marker date="1469113618491" expanded="true" signature="6137:6230" placeholder="Select `qlkd..." />
-                <marker date="1469113618491" expanded="true" signature="6344:6429" placeholder="Select `qlkn..." />
-                <marker date="1469113618491" expanded="true" signature="6574:6659" placeholder="Select `qlkn..." />
-                <marker date="1469113618491" expanded="true" signature="6798:6877" placeholder="Select `qlks..." />
-                <marker date="1469113618491" expanded="true" signature="7013:7080" placeholder="Select `shop..." />
-                <marker date="1469113618491" expanded="true" signature="10036:10098" placeholder="SELECT :_tab..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -93,8 +53,8 @@
         <option value="$PROJECT_DIR$/view/skin2/template/sitebar/catalogue.tpl" />
         <option value="$PROJECT_DIR$/view/skin2/template/module/product_list.tpl" />
         <option value="$PROJECT_DIR$/view/skin2/template/sitebar/product_list.tpl" />
-        <option value="$PROJECT_DIR$/view/skin2/css/style.css" />
         <option value="$PROJECT_DIR$/view/skin2/template/common/footer.tpl" />
+        <option value="$PROJECT_DIR$/view/skin2/css/style.css" />
       </list>
     </option>
   </component>
@@ -131,6 +91,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,13 +214,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../squarelife" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -297,7 +257,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -305,7 +265,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -359,9 +319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15078" max-vertical-offset="15725">
           <caret line="913" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -425,9 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15129" max-vertical-offset="15725">
           <caret line="913" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -491,9 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15725">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,9 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,37 +639,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/document.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.115385" vertical-offset="4770" max-vertical-offset="7854">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4770" max-vertical-offset="7854">
           <caret line="293" column="30" selection-start-line="293" selection-start-column="20" selection-end-line="293" selection-end-column="30" />
-          <folding>
-            <marker date="1469113618491" expanded="true" signature="2555:2644" placeholder="Select `medi..." />
-            <marker date="1469113618491" expanded="true" signature="3589:3703" placeholder="Select `site..." />
-            <marker date="1469113618491" expanded="true" signature="3838:3929" placeholder="Select `cate..." />
-            <marker date="1469113618491" expanded="true" signature="4052:4131" placeholder="Select `medi..." />
-            <marker date="1469113618491" expanded="true" signature="4273:4354" placeholder="Select `medi..." />
-            <marker date="1469113618491" expanded="true" signature="4814:4895" placeholder="Select `qlkn..." />
-            <marker date="1469113618491" expanded="true" signature="5049:5140" placeholder="Select `user..." />
-            <marker date="1469113618491" expanded="true" signature="5280:5355" placeholder="Select `user..." />
-            <marker date="1469113618491" expanded="true" signature="5493:5560" placeholder="Select `user..." />
-            <marker date="1469113618491" expanded="true" signature="5717:5788" placeholder="Select `modu..." />
-            <marker date="1469113618491" expanded="true" signature="5920:6003" placeholder="Select `modu..." />
-            <marker date="1469113618491" expanded="true" signature="6137:6230" placeholder="Select `qlkd..." />
-            <marker date="1469113618491" expanded="true" signature="6344:6429" placeholder="Select `qlkn..." />
-            <marker date="1469113618491" expanded="true" signature="6574:6659" placeholder="Select `qlkn..." />
-            <marker date="1469113618491" expanded="true" signature="6798:6877" placeholder="Select `qlks..." />
-            <marker date="1469113618491" expanded="true" signature="7013:7080" placeholder="Select `shop..." />
-            <marker date="1469113618491" expanded="true" signature="10036:10098" placeholder="SELECT :_tab..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin2/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7010" max-vertical-offset="15725">
-          <caret line="417" column="17" selection-start-line="417" selection-start-column="17" selection-end-line="417" selection-end-column="17" />
-          <folding>
-            <marker date="1494145718093" expanded="true" signature="5115:5326" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.7626263" vertical-offset="6823" max-vertical-offset="15725">
+          <caret line="428" column="13" selection-start-line="428" selection-start-column="13" selection-end-line="428" selection-end-column="13" />
         </state>
       </provider>
     </entry>

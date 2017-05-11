@@ -9,6 +9,9 @@
     <div class="footer">
 
         <div class="company">Q7 Computer</div>
+        Giấy chứng nhận: 41G8013743 Cấp ngày 23 tháng 2 năm 2016<br>
+        Nơi cấp: Ủy Ban Nhân Dân Quận 7<br>
+        Chủ sở hữu: Bùi Thanh Trung<br>
         Địa chỉ: 71B Phan Huy Thực, Phường Tân Kiểng, Quận 7, Tp HCM<br>
         Điện thoai: 0934 105 799 - 0934 810 799
         Website: <a href="http://q7computer.vn/">q7computer.vn</a> - <a href="http://q7computer.com/">q7computer.com</a><br>
