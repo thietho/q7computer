@@ -6,6 +6,11 @@
         <a href="#"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>footer-youtube.png"></a><br>
         Copyright © 2016 Q7computer
     </div>
+    <div id="footer-report">
+        <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=33441" target="_blank">
+            <img src="<?php echo HTTP_SERVER.DIR_IMAGE?>20150827110756-dathongbao.png" width="150px">
+        </a>
+    </div>
     <div class="footer">
 
         <div class="company">Q7 Computer</div>

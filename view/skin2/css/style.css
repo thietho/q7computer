@@ -415,9 +415,15 @@ a.afooter, a.afooter:link, a.afooter:visited {
 	position:absolute;
 	text-align:center;
 	margin-left:617px;
-	margin-top:100px;
+	margin-top:113px;
 	font-style:italic;
 	color:#6abdf2;
+}
+#footer-report
+{
+    position:absolute;
+    margin-left:617px;
+    margin-top:50px;
 }
 .footer a
 {
