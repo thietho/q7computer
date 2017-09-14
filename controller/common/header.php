@@ -14,7 +14,7 @@ class ControllerCommonHeader extends Controller
 				$this->data['headerimage'] = '<img src="'.HTTP_SERVER.DIR_IMAGE.'header.png">';
 				break;
 			default:
-				$this->data['headerimage'] = '<embed width="970px" height="200px" name="plugin" src="'.HTTP_SERVER.DIR_IMAGE.'Q7_top_970x200px.swf" type="application/x-shockwave-flash">';
+				$this->data['headerimage'] = '<embed width="970px" height="195px" name="plugin" src="'.HTTP_SERVER.DIR_IMAGE.'q7computer_1000x200.swf" type="application/x-shockwave-flash">';
 				
 		}
 		$sitemapid = "hotroonline";
