@@ -19,7 +19,7 @@ class ControllerLayoutHome extends Controller
 		if(@$this->document->meta_description == "")
 			$this->data['meta_description'] = $this->document->setup['Description'];
 		else
-			$this->data['meta_description'] = $this->document->meta_description ;
+			$this->data['meta_description'] = strip_tags(html_entity_decode($this->document->meta_description)) ;
 		if(@$this->document->meta_keyword == "")
 			$this->data['meta_keyword'] = $this->document->setup['Keyword'];
 		else

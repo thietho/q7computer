@@ -11,7 +11,7 @@ class ControllerCommonHeader extends Controller
 		{
 			case 'phone':	
 			case 'tablet':
-				$this->data['headerimage'] = '<img src="'.HTTP_SERVER.DIR_IMAGE.'header.png">';
+				$this->data['headerimage'] = '<img src="'.HTTP_SERVER.DIR_IMAGE.'header.png" style="width: 100%;">';
 				break;
 			default:
 				$this->data['headerimage'] = '<embed width="970px" height="195px" name="plugin" src="'.HTTP_SERVER.DIR_IMAGE.'q7computer_1000x200.swf" type="application/x-shockwave-flash">';
