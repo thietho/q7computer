@@ -28,8 +28,10 @@
 		
 		// Router
 		if (isset($request->get['route'])) {
+			
 			$action = new Router($request->get['route']);
 		} else {
+			
 			$action = new Action('page/home', 'index');
 		}
 		

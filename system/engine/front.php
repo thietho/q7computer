@@ -8,6 +8,7 @@ final class Front {
 	}
 	
   	public function dispatch($action, $error) {
+		
 		$this->error = $error;
 		
 		while ($action) {

@@ -1,7 +1,7 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://'.$_SERVER['HTTP_HOST'].'/q7computer/admincp/');
-define('HTTP_IMAGE', 'http://'.$_SERVER['HTTP_HOST'].'/q7computer/file/');
+define('HTTP_SERVER', 'http://'.$_SERVER['HTTP_HOST'].'/admincp/');
+define('HTTP_IMAGE', 'http://'.$_SERVER['HTTP_HOST'].'/file/');
 
 // HTTPS
 define('HTTPS_SERVER', '');
