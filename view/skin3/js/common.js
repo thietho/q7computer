@@ -352,4 +352,22 @@ function loadLazy() {
 }
 $(document).ready(function(e) {
     loadLazy();
+	$('#menuright').click(function () {
+		$('.site_content_right').toggle(function () {
+			if($('.site_content_right').css('display')=='block'){
+				$('#menuright').css('right',$('.site_content_right').width()+"px");
+			}else {
+				$('#menuright').css('right',0);
+			}
+		});
+	});
+	$('#menuleft').click(function () {
+		$('.site_content_left').toggle(function () {
+			if($('.site_content_left').css('display')=='block'){
+				$('#menuleft').css('left',$('.site_content_left').width()+"px");
+			}else {
+				$('#menuleft').css('left',0);
+			}
+		});
+	});
 });

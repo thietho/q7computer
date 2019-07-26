@@ -187,11 +187,13 @@ a.catalog, a.catalog:link, a.catalog:visited {
 .fix980 {
 	width:970px;
 	margin:0 auto;
+	position: relative;
 }
 .fix960 {
 	width:970px;
 	margin:0 auto;
 	background:#fff;
+	position: relative;
 }
 .topbg {
 	width:980px;
@@ -402,28 +404,30 @@ a.afooter, a.afooter:link, a.afooter:visited {
 	/* For Opera 11.1 to 12.0 */
 	background: -o-linear-gradient(left,#032c63,#03618e,#032c63);
 	/* For Fx 3.6 to 15 */
-	background: -moz-linear-gradient(left,#032c63t,#03618e,#032c63);
 	/* Standard syntax */
 	background: linear-gradient(to right, #032c63,#03618e,#032c63); 
 	line-height: 24px;
 	padding:20px 38px 10px;
 	color:#6abdf2;
 	font-size:1.2em;
+	position: relative;
 }
 #footer-social
 {
 	position:absolute;
 	text-align:center;
-	margin-left:617px;
+	right: 182px;
 	margin-top:113px;
 	font-style:italic;
 	color:#6abdf2;
+	z-index: 100;
 }
 #footer-report
 {
     position:absolute;
-    margin-left:617px;
+	right: 200px;
     margin-top:50px;
+	z-index: 100;
 }
 .footer a
 {
@@ -432,8 +436,9 @@ a.afooter, a.afooter:link, a.afooter:visited {
 #footer-logo
 {
 	position:absolute;
-	top:66px;
-	right: 15px;
+	margin-top:66px;
+	right: 45px;
+	z-index: 100;
 }
 .company
 {
@@ -731,10 +736,9 @@ a.afooter, a.afooter:link, a.afooter:visited {
 .head_top {
 	width:100%;
 	height: 42px;
-	margin-top: 0px;
 	clear: both;
 	z-index: 2;
-	width:970px;
+
 	margin:0 auto;
 }
 .head_banner {
@@ -925,6 +929,20 @@ table.ben-form
 	margin-top:90px;
 	margin-left:130px;
 }
+#menuleft{
+	position: absolute;
+	left: 0;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
+}
+#menuright{
+	position: absolute;
+	right: 0;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
+}
 @media screen and (max-width: 969px) {
 	.fix1000{
 		width: auto;
@@ -936,12 +954,47 @@ table.ben-form
 		width: auto;
 	}
 	.site_content_center{
-		width: 100%;
+		width: 70%;
 	}
 	.site_content_left{
-		position: absolute;
+
 	}
 	.site_content_right{
 		position: absolute;
+		right: 0;
+		display: none;
+	}
+	#menuright{
+		display: block;
+	}
+}
+@media screen and (max-width: 768px) {
+	#footer-logo{
+		right: 0;
+	}
+	#footer-report{
+		right: 110px;
+	}
+	#footer-social{
+		right: 106px;
+	}
+}
+@media screen and (max-width: 766px) {
+	.site_content_left{
+		position: absolute;
+		display: none;
+		z-index: 100;
+	}
+	.site_content_center{
+		width: 100%;
+		margin-left: 0;
+	}
+	#menuleft{
+		display: block;
+	}
+}
+@media screen and (max-width: 663px) {
+	.head_menu{
+		display: none;
 	}
 }
