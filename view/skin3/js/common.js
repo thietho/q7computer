@@ -370,4 +370,13 @@ $(document).ready(function(e) {
 			}
 		});
 	});
+	$('#menumain').click(function () {
+		$('#menumobile').toggle(function () {
+			if($('#menumobile').css('display')=='block'){
+				$('#menumain').css('left',$('#menumobile').width()+"px");
+			}else {
+				$('#menumain').css('left',0);
+			}
+		});
+	});
 });
