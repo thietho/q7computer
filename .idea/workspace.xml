@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="625155f5-e850-48a2-b8f7-b48423e874f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/view/skin3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/skin3/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/skin3/template/common/header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/common/header.tpl" afterDir="false" />
-    </list>
+    <list default="true" id="625155f5-e850-48a2-b8f7-b48423e874f5" name="Default" comment="" />
     <ignored path="q7computer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -71,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/view/skin3/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
-              <caret line="960" column="20" selection-start-line="960" selection-start-column="20" selection-end-line="960" selection-end-column="20" />
+              <caret line="960" column="21" lean-forward="true" selection-start-line="960" selection-start-column="21" selection-end-line="960" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -250,16 +246,15 @@
       <workItem from="1505399869954" duration="411000" />
       <workItem from="1564068644367" duration="421000" />
       <workItem from="1564069279793" duration="3462000" />
-      <workItem from="1564108071337" duration="10470000" />
+      <workItem from="1564108071337" duration="10549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14764000" />
+    <option name="totallyTimeSpent" value="14843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26862463" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -449,7 +444,7 @@
     <entry file="file://$PROJECT_DIR$/view/skin3/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
-          <caret line="960" column="20" selection-start-line="960" selection-start-column="20" selection-end-line="960" selection-end-column="20" />
+          <caret line="960" column="21" lean-forward="true" selection-start-line="960" selection-start-column="21" selection-end-line="960" selection-end-column="21" />
         </state>
       </provider>
     </entry>
