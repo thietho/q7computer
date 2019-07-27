@@ -58,7 +58,7 @@
 <?php echo @$header?>
 
 <div class="fix1000" style=" ">
-    <div class="clear" style="height:5px;"></div>
+    <div class="clear"></div>
     <div class="">
         <?php echo @$content?>
 

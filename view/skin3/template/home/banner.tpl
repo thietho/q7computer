@@ -1,5 +1,5 @@
 <?php if(@count($medias)){ ?>
-<div class="boxstyle_center_home" style="height:280px; overflow:hidden; padding-top:7px;">
+<div class="boxstyle_center_home" style="overflow:hidden; padding-top:7px;">
 	<div class='clus'>           
       <div class="bxslider">
       		<?php foreach($medias as $key => $media) {?>

@@ -218,7 +218,7 @@ $("#ben-next").click(function(){
         </div>
         
     </div>
-    <div class="clearer">&nbsp;</div>
+    <div class="clear"></div>
     
     <p>
     	<?php echo @$post['summary']?>

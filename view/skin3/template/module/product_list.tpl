@@ -3,67 +3,117 @@
 if(@count($medias))
 {
 ?>
-<div class="boxstyle_center_home">
-  <div class='clus'>
-    <table width='100%' cellpadding='5'>
-    <?php $i=0?>
-    <?php foreach($medias as $media) { ?>
-    	<?php if($i==0) echo "<tr>";?>
-    	<td width='33%' class='row_nam'>
-        <?php if($media['discountpercent']>0){ ?>
-        <div class="flagdiscount"><?php echo $this->string->numberFormate($media['discountpercent'])?>%</div>
-        <?php } ?>
-        <?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
-        <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/for-sale.gif" width="90px"></div>
-        <?php }?>
-        <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
-        <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-new.gif"></div>
-        <?php }?>
-        <?php if( in_array($media['mediaid'],$sanphamhot)){ ?>
-        <div class="icon-status icon-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-hot.gif"></div>
-        <?php }?>
-        <div align='center' style='padding:3px;'><a href="<?php echo @$media['link']?>" class='color_2'><img data-src="<?php echo @$media['imagethumbnail']?>" class="lazy loading"/></a>
-            <div class='clear' style='height:1px;'></div>
-            <div>
-            <?php if($media['discountpercent']==0){ ?>
-              <div class='clear maudo' align='center'><strong><?php echo @$this->string->numberFormate($media['price'])?><?php echo @$this->document->setup['Currency']?></strong></div>
-              
-            <?php }else{ ?>
-            	<div class='clear' align='center'><strong><?php echo @$this->string->numberFormate($media['price'])?><?php echo @$this->document->setup['Currency']?></strong></div>
-            	<div class='clear maudo' align='center'><strong><?php echo @$this->string->numberFormate($media['pricepromotion'])?><?php echo @$this->document->setup['Currency']?></strong></div>
+<div class="boxstyle_center_home view-product-desktop">
+    <div class='clus'>
+        <table width='100%' cellpadding='5'>
+            <?php $i=0?>
+            <?php foreach($medias as $media) { ?>
+            <?php if($i==0) echo "<tr>";?>
+            <td width='33%' class='row_nam'>
+                <?php if($media['discountpercent']>0){ ?>
+                <div class="flagdiscount"><?php echo $this->string->numberFormate($media['discountpercent'])?>%</div>
+                <?php } ?>
+                <?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
+                <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/for-sale.gif"
+                                                        width="90px"></div>
+                <?php }?>
+                <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
+                <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-new.gif"></div>
+                <?php }?>
+                <?php if( in_array($media['mediaid'],$sanphamhot)){ ?>
+                <div class="icon-status icon-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-hot.gif"></div>
+                <?php }?>
+                <div align='center' style='padding:3px;'><a href="<?php echo @$media['link']?>" class='color_2'><img
+                                data-src="<?php echo @$media['imagethumbnail']?>" class="lazy loading"/></a>
+                    <div class='clear' style='height:1px;'></div>
+                    <div>
+                        <?php if($media['discountpercent']==0){ ?>
+                        <div class='clear maudo' align='center'><strong><?php echo @$this->
+                                string->numberFormate($media['price'])?><?php echo @$this->
+                                document->setup['Currency']?></strong></div>
+
+                        <?php }else{ ?>
+                        <div class='clear' align='center'><strong><?php echo @$this->
+                                string->numberFormate($media['price'])?><?php echo @$this->
+                                document->setup['Currency']?></strong></div>
+                        <div class='clear maudo' align='center'><strong><?php echo @$this->
+                                string->numberFormate($media['pricepromotion'])?><?php echo @$this->
+                                document->setup['Currency']?></strong></div>
+                        <?php } ?>
+                        <div class='clear'></div>
+                        <a href="<?php echo @$media['link']?>"><?php echo @$this->document->productName($media)?></a>
+                    </div>
+                    <div align='center'><a class="btncart" onclick="cart.add('<?php echo @$media['mediaid']?>')"><img
+                                    src='<?php echo HTTP_SERVER.DIR_IMAGE?>chonmua.png' border='0'></a></div>
+                </div>
+            </td>
+            <?php $i++;?>
+            <?php if($i == 3) { echo "</tr>"; $i=0;}?>
             <?php } ?>
-              <div class='clear'></div>
-              <a href="<?php echo @$media['link']?>"><?php echo @$this->document->productName($media)?></a></div>
-            <div align='center'><a class="btncart" onclick="cart.add('<?php echo @$media['mediaid']?>')"><img src='<?php echo HTTP_SERVER.DIR_IMAGE?>chonmua.png' border='0' ></a></div>
-          </div>
-        </td>
-        <?php $i++;?>
-        <?php if($i == 3) { echo "</tr>"; $i=0;}?>
-    <?php } ?>
-    <?php
+            <?php
     	if($i<3)
         {
         	for( ;$i<3;$i++ )
             {
             	echo "<td class='row_nam'></td>";
             }
-        }
-    ?>
-      
-    </table>
-  </div>
-  <div class="clear" style="height:0px;"></div>
+            }
+            ?>
+
+        </table>
+    </div>
+    <div class="clear" style="height:0px;"></div>
 </div>
+<div class="view-product-mobile">
+    <?php foreach($medias as $media) { ?>
+    <div class="product-item ben-left">
+        <div class="product-cell">
+            <?php if($media['discountpercent']>0){ ?>
+            <div class="flagdiscount"><?php echo $this->string->numberFormate($media['discountpercent'])?>%</div>
+            <?php } ?>
+            <?php if( in_array($media['mediaid'],$sanphamkhuyenmai)){ ?>
+            <div class="icon-status icon-sale"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/for-sale.gif"
+                                                    width="90px"></div>
+            <?php }?>
+            <?php if( in_array($media['mediaid'],$sanphammoi)){ ?>
+            <div class="icon-status icon-new"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-new.gif"></div>
+            <?php }?>
+            <?php if( in_array($media['mediaid'],$sanphamhot)){ ?>
+            <div class="icon-status icon-hot"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>icon/ico-hot.gif"></div>
+            <?php }?>
+            <div align='center' style='padding:3px;'><a href="<?php echo @$media['link']?>" class='color_2'><img
+                            data-src="<?php echo @$media['imagethumbnail']?>" class="lazy loading"/></a>
+                <div class='clear' style='height:1px;'></div>
+                <div>
+                    <?php if($media['discountpercent']==0){ ?>
+                    <div class='clear maudo' align='center'><strong><?php echo @$this->
+                            string->numberFormate($media['price'])?><?php echo @$this->
+                            document->setup['Currency']?></strong></div>
 
+                    <?php }else{ ?>
+                    <div class='clear' align='center'><strong><?php echo @$this->
+                            string->numberFormate($media['price'])?><?php echo @$this->
+                            document->setup['Currency']?></strong></div>
+                    <div class='clear maudo' align='center'><strong><?php echo @$this->
+                            string->numberFormate($media['pricepromotion'])?><?php echo @$this->
+                            document->setup['Currency']?></strong></div>
+                    <?php } ?>
+                    <div class='clear'></div>
+                    <a href="<?php echo @$media['link']?>"><?php echo @$this->document->productName($media)?></a>
+                </div>
+                <div align='center'><a class="btncart" onclick="cart.add('<?php echo @$media['mediaid']?>')"><img
+                                src='<?php echo HTTP_SERVER.DIR_IMAGE?>chonmua.png' border='0'></a></div>
+            </div>
+        </div>
 
-    
-
-
-
+    </div>
+    <?php } ?>
+    <div class="clear"></div>
+</div>
 <?php
 }
 ?>
 <script type="text/javascript">
-//loadLazy();
+    //loadLazy();
 </script>
 

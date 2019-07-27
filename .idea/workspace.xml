@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="625155f5-e850-48a2-b8f7-b48423e874f5" name="Default" comment="" />
+    <list default="true" id="625155f5-e850-48a2-b8f7-b48423e874f5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/view/skin3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin3/template/common/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/common/footer.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin3/template/home/banner.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/home/banner.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin3/template/layout/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/layout/home.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin3/template/module/product_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/module/product_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin3/template/module/product_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/module/product_list.tpl" afterDir="false" />
+    </list>
     <ignored path="q7computer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,77 +31,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin3/template/layout/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin3/template/page/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin3/template/page/detail.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/layout/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/skin3/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="960" column="21" lean-forward="true" selection-start-line="960" selection-start-column="21" selection-end-line="960" selection-end-column="21" />
+            <state relative-caret-position="430">
+              <caret line="1100" column="23" selection-start-line="1100" selection-start-column="23" selection-end-line="1100" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin3/js/menu-collapsed.js">
+        <entry file="file://$PROJECT_DIR$/view/skin3/template/module/product_detail.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin3/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="370" column="11" lean-forward="true" selection-start-line="370" selection-start-column="11" selection-end-line="370" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin3/template/common/header.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="322">
+              <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,17 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin3/template/common/footer.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="84" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/config/directory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -122,7 +67,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>footer-lo</find>
+      <find>height:5px;</find>
+      <find>item</find>
+      <find>clear</find>
+      <find>ben-editor</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\q7computer</dir>
+    </dirStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -136,7 +88,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/system/config/directory.php" />
-        <option value="$PROJECT_DIR$/view/skin3/template/layout/home.tpl" />
         <option value="$PROJECT_DIR$/controller/layout/home.php" />
         <option value="$PROJECT_DIR$/controller/common/header.php" />
         <option value="$PROJECT_DIR$/view/skin3/js/menu-collapsed.js" />
@@ -144,6 +95,11 @@
         <option value="$PROJECT_DIR$/view/skin3/template/page/detail.tpl" />
         <option value="$PROJECT_DIR$/view/skin3/template/common/header.tpl" />
         <option value="$PROJECT_DIR$/view/skin3/js/common.js" />
+        <option value="$PROJECT_DIR$/view/skin3/template/layout/home.tpl" />
+        <option value="$PROJECT_DIR$/view/skin3/template/module/product_list.tpl" />
+        <option value="$PROJECT_DIR$/view/skin3/template/home/banner.tpl" />
+        <option value="$PROJECT_DIR$/view/skin3/template/common/footer.tpl" />
+        <option value="$PROJECT_DIR$/view/skin3/template/module/product_detail.tpl" />
         <option value="$PROJECT_DIR$/view/skin3/css/style.css" />
       </list>
     </option>
@@ -165,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +145,13 @@
               <item name="q7computer" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="skin3" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="q7computer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="q7computer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="skin3" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -198,11 +162,42 @@
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="q7computer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="q7computer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="skin3" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="q7computer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="q7computer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="skin3" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="q7computer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="q7computer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="skin3" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="q7computer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="q7computer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="skin3" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,16 +242,17 @@
       <workItem from="1564068644367" duration="421000" />
       <workItem from="1564069279793" duration="3462000" />
       <workItem from="1564108071337" duration="10549000" />
+      <workItem from="1564193981736" duration="6067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14843000" />
+    <option name="totallyTimeSpent" value="20910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26862463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2722063" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -368,45 +364,10 @@
     <entry file="file://$PROJECT_DIR$/view/skin3/js/me.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/config/directory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/common/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="98" selection-start-line="13" selection-start-column="98" selection-end-line="13" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/layout/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin3/template/layout/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin3/template/common/footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="84" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin3/js/menu-collapsed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -417,34 +378,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin3/template/page/home.tpl">
+    <entry file="file://$PROJECT_DIR$/controller/layout/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin3/template/common/header.tpl">
+    <entry file="file://$PROJECT_DIR$/view/skin3/js/menu-collapsed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin3/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6290">
+          <caret line="370" column="11" selection-start-line="370" selection-start-column="11" selection-end-line="370" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/config/directory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/common/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/layout/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
-          <caret line="370" column="11" lean-forward="true" selection-start-line="370" selection-start-column="11" selection-end-line="370" selection-end-column="11" />
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/module/product_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/page/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/home/banner.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/module/product_detail.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin3/template/common/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin3/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="960" column="21" lean-forward="true" selection-start-line="960" selection-start-column="21" selection-end-line="960" selection-end-column="21" />
+        <state relative-caret-position="430">
+          <caret line="1100" column="23" selection-start-line="1100" selection-start-column="23" selection-end-line="1100" selection-end-column="23" />
         </state>
       </provider>
     </entry>
