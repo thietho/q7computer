@@ -1,5 +1,5 @@
 <div>
-<table class="ben-table">
+<table class="ben-table view-cart-desktop">
 	<thead>
         <tr>
             <th>Hình</th>
@@ -37,73 +37,85 @@
     </tfoot>
 </table>
 </div>
+<div class="view-cart-mobile">
+    <?php
+    	$sum = 0;
+    	foreach($medias as $media) {
+        $sum += $media['price'] * $media['qty'];
+    ?>
+    <div class="cart-item">
+        <table>
+            <tr>
+                <td>
+                    <img src="<?php echo @$media['imagethumbnail']?>"/>
+                </td>
+                <td>
+                    <strong><?php echo @$this->document->productName($media['mediaid'])?></strong><br>
+                    Giá: <?php echo @$this->string->numberFormate($media['price'])?><?php echo @$this->
+                    document->setup['Currency']?><br>
+                    Số lượng:<?php echo @$this->string->numberFormate($media['qty'])?><br>
+                    Thành tiền: <?php echo $this->string->numberFormate($media['price'] * $media['qty'])?><?php echo $this->document->setup['Currency']?>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <?php } ?>
+    <div class="cart-total"><strong>Tổng đơn hàng: </strong><?php echo @$this->string->numberFormate($sum)?><?php echo @$this->
+        document->setup['Currency']?></div>
+</div>
 <div>
 	<form id="frmCheckOut" method="post">
     	<div id="error" class="ben-error" style="display:none"></div>
         <h2>Thông tin khách hàng</h2>
-    	<table class="ben-form">
-        	
-            <input type="hidden" id="userid" name="userid" value="<?php echo @$member['username']?>" size="40">
-            <input type="hidden" id="orderdate" name="orderdate" >
-            <tr>
-            	<td width="200px"><label>Họ và tên</label></td>
-                <td><input type="text" id="customername" name="customername" value="<?php echo @$member['fullname']?>" class="ben-textbox" size="40" <?php echo @$readonly?>></td>
-            </tr>
-            <tr>
-            	<td><label>Email</label></td>
-                <td><input type="text" id="email" name="email" value="<?php echo @$member['email']?>" class="ben-textbox" size="40" <?php echo @$readonly?>></td>
-            </tr>
-            <tr>
-            	<td><label>Địa chỉ</label></td>
-                <td><input type="text" id="address" name="address" value="<?php echo @$member['address']?>" class="ben-textbox" size="40" <?php echo @$readonly?>></td>
-            </tr>
-            <tr>
-            	<td ><label>Điện thoại</label></td>
-                <td><input type="text" id="phone" name="phone" value="<?php echo @$member['phone']?>" class="ben-textbox" size="40" <?php echo @$readonly?>></td>
-            </tr>
-            
-		</table>
+        <input type="hidden" id="userid" name="userid" value="<?php echo @$member['username']?>" size="40">
+        <input type="hidden" id="orderdate" name="orderdate" >
+        <div class="form-group">
+            <label>Họ và tên</label><br>
+            <input type="text" id="customername" name="customername" value="<?php echo @$member['fullname']?>" class="ben-textbox" <?php echo @$readonly?>>
+        </div>
+        <div class="form-group">
+            <label>Email</label><br>
+            <input type="text" id="email" name="email" value="<?php echo @$member['email']?>" class="ben-textbox" <?php echo @$readonly?>>
+        </div>
+        <div class="form-group">
+            <label>Địa chỉ</label><br>
+            <input type="text" id="address" name="address" value="<?php echo @$member['address']?>" class="ben-textbox" <?php echo @$readonly?>>
+        </div>
+        <div class="form-group">
+            <label>Điện thoại</label><br>
+            <input type="text" id="phone" name="phone" value="<?php echo @$member['phone']?>" class="ben-textbox" <?php echo @$readonly?>>
+        </div>
         <input id="chk_fillnhanhang" type="checkbox" /> Thông tin nhận hàng như trên
         <h2>Thông tin giao hàng</h2>
-        <table class="ben-form">
-        	<tr>
-            	<td width="200px">Người nhận hàng</td>
-                <td><input type="text" id="receiver" name="receiver" class="ben-textbox" size="40" ></td>
-            </tr>
-            <tr>
-            	<td>Số điện thoại</td>
-                <td><input type="text" id="receiverphone" name="receiverphone" class="ben-textbox" size="40" <?php echo @$readonly?>></td>
-            </tr>
-            <tr>
-            	<td>Địa chỉ giao hàng</td>
-                <td><input type="text" id="shipperat" name="shipperat" class="ben-textbox" size="40" ></td>
-            </tr>
-            <tr>
-            	<td>Phương thức thanh toán</td>
-                <td>
-                	<?php foreach($this->document->paymenttype as $key => $val){ ?>
-                    <input type="radio" name="paymenttype" value="<?php echo @$key?>" /> <?php echo @$val?><br />
-                    <?php } ?>
-                	
-                </td>
-            </tr>
-            <tr>
-            	<td>Ghi chú</td>
-                <td><textarea id="comment" name="comment"></textarea></td>
-            </tr>
-        </table>
-        <table>
-            
-            <tr>
-            	<td ></td>
-                <td>
-                	<input type="button" id="btnCheckout" name="btnCheckout" class="ben-button" value="Thanh toán">
-                </td>
-            </tr>
-        </table>
-        
+        <div class="form-group">
+            <label>Người nhận hàng</label><br>
+            <input type="text" id="receiver" name="receiver" class="ben-textbox">
+        </div>
+        <div class="form-group">
+            <label>Số điện thoại</label><br>
+            <input type="text" id="receiverphone" name="receiverphone" class="ben-textbox">
+        </div>
+        <div class="form-group">
+            <label>Địa chỉ giao hàng</label><br>
+            <input type="text" id="shipperat" name="shipperat" class="ben-textbox">
+        </div>
+        <div class="form-group">
+            <label>Phương thức thanh toán</label><br>
+            <?php foreach($this->document->paymenttype as $key => $val){ ?>
+            <input type="radio" name="paymenttype" value="<?php echo @$key?>" /> <?php echo @$val?>
+            <?php } ?>
+        </div>
+        <div class="form-group">
+            <label>Ghi chú</label><br>
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="button" id="btnCheckout" name="btnCheckout" class="ben-button" value="Thanh toán">
+        </div>
     </form>
 </div>
+
 <div class="clearer">&nbsp;</div>
 <script language="javascript">
 $("#btnCheckout").click(function(){

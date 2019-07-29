@@ -31,8 +31,8 @@ function Cart()
 						autoOpen: false,
 						show: "blind",
 						hide: "explode",
-						width: 550,
-						height: 300,
+						//width: 550,
+						//height: 300,
 						modal: true,
 						close:function()
 						{
