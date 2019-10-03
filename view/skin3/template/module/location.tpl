@@ -45,7 +45,5 @@ function toggleBounce() {
 </script>
 <div id="map" style="width: 100%; height: 600px;"></div>
 
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDREKHzZPitTnAFDGz-Rpfj1wYP75-KOLU&callback=initMap">
-</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCibpjemwZxmni5m0bFk_ceXWSyCF7iq8Q&callback=initMap" type="text/javascript"></script>
  
