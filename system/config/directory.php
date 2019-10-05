@@ -5,8 +5,8 @@ define('HTTP_SERVER', 'http://'.$_SERVER['HTTP_HOST'].'/');
 
 
 // HTTPS
-define('HTTPS_SERVER', '');
-define('HTTPS_IMAGE', '');
+define('HTTPS_SERVER', 'https://'.$_SERVER['HTTP_HOST'].'/');
+define('HTTPS_IMAGE', 'https://'.$_SERVER['HTTP_HOST'].'/file/');
 
 // DIR
 define('DIR_APPLICATION', '');

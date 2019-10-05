@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="625155f5-e850-48a2-b8f7-b48423e874f5" name="Default" comment="">
+    <list default="true" id="625155f5-e850-48a2-b8f7-b48423e874f5" name="Default" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/skin3/template/module/location.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin3/template/module/location.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/config/directory.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/config/directory.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
@@ -99,8 +100,19 @@
       <workItem from="1564108071337" duration="10549000" />
       <workItem from="1564193981736" duration="6067000" />
       <workItem from="1564403178526" duration="5453000" />
-      <workItem from="1570115828748" duration="1136000" />
+      <workItem from="1570115828748" duration="1178000" />
+      <workItem from="1570122135331" duration="847000" />
+      <workItem from="1570262322975" duration="247000" />
+      <workItem from="1570292487760" duration="858000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1570120055321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570120055321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +123,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -124,5 +138,9 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
